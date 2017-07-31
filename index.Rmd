@@ -1,0 +1,62 @@
+---
+title: "CE085 - Estatística Inferencial"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+[![Build Status](https://travis-ci.org/fernandomayer/ce001n-2017-1.svg)](https://travis-ci.org/fernandomayer/ce001-2017-1)
+
+<!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
+<!-- espaço para avisos. Comente quando não utilizar. </div> -->
+
+# Detalhes da oferta da disciplina
+
+- **Curso:** Bacharelado em Estatística (N)
+- **Período:** segundo semestre de 2017
+- **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
+  Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
+- **Horários e Locais:**
+    - Segunda, 19:00 - 20:30h, **PA03**
+    - Quarta, 20:45 - 22:15h, **PA02**
+    - Sexta, 19:00 - 20:30h, **PA03**
+- **Horários de atendimento do professor:**
+    - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
+      podem ser agendados previamente por email.
+- **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
+- **Avaliação**: serão realizadas 2 avaliações e um trabalho durante o semestre
+    - As datas das provas serão definidas conforme o andamento da
+      disciplina.
+    - A média final será a média simples das 2 avaliações e do trabalho (todas tem o mesmo
+      peso).
+- **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
+    - **31/07**: Início do semestre letivo
+    - **02/12**: Final do semestre letivo
+    - **11/12-16/12**: Período de exames
+
+# Programa/objetivos da disciplina
+
+O objetivo deste curso é apresentar os conceitos básicos da inferência
+estatística. O curso introduz as principais idéias do pensamento
+estatístico do ponto de vista frequentista. Enfâse é dada a métodos de 
+estimação e suas propriedades assintóticas. Pretende-se manter o curso
+em um nível intermediário de rigorosidade matemática. A demonstração
+formal dos principais teoremas será feita com riqueza de detalhes e
+sempre que possível acompanhada de estudos de simulação para exemplificar
+a aplicação prática dos teoremas. O curso é dividido em quatro etapas:
+
+- Introdução ao pensamento estatístico.
+- Revisão e exemplificação computacional de ferramentas da teoria de probabilidade.
+- Métodos para inferência estatística.
+- Métodos computacionais para Inferência estatística.
+
+
+<!-- links -->
+
+[Wagner Hugo Bonat]: https://wbonat.github.io
+[LEG]: http://www.leg.ufpr.br
+[Resolução 62/16 - CEPE]: http://www.est.ufpr.br/calendario/cepe6216.pdf

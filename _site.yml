@@ -1,0 +1,50 @@
+name: "CE001"
+output_dir: "."
+exclude: ["README.md"]
+output:
+  html_document:
+    theme: flatly
+    highlight: default
+    code_folding: hide
+    number_sections: false
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+navbar:
+  title: "CE001"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Aulas"
+      href: aulas.html
+    - text: "Referências"
+      href: referencias.html
+    - text: "Programas"
+      href: recursos.html
+    - text: "Materiais"
+      menu:
+      - text: "Introdução à Análise Exploratória de Dados [PDF]"
+        href: Slides/Aula1.pdf
+      - text: "Probabilidaes [PDF]"
+        href: Slides/Aula2.pdf
+      - text: "Variáveis aleatórias discretas [PDF]"
+        href: Slides/Aula3.pdf
+      - text: "Medidas resumo [PDF]"
+        href: Slides/Aula4.pdf
+      - text: "Variáveis bidimensionais [PDF]"
+        href: Slides/Aula5.pdf
+      - text: "Variáveis aleatórias contínuas [PDF]"
+        href: Slides/Aula6.pdf
+      - text: "Inferência estatística [PDF]"
+        href: Slides/Aula7.pdf
+      - text: "R script - Inferência estatística"
+        href: Slides/Script1.R
+      - text: "Teste de hipóteses [PDF]"
+        href: Slides/Aula8.pdf
+      - text: "Tópicos Especiais [PDF]"
+        href: Slides/Aula9.pdf
+  right:
+    - text: GitHub
+      href: https://github.com/wbonat/ce001m-2017-1

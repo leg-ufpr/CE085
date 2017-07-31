@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Notas</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE001</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="aulas.html">Aulas</a>
+</li>
+<li>
+  <a href="referencias.html">Referências</a>
+</li>
+<li>
+  <a href="recursos.html">Programas</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Materiais
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Slides/Aula1.pdf">Introdução à Análise Exploratória de Dados [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula2.pdf">Probabilidaes [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula3.pdf">Variáveis aleatórias discretas [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula4.pdf">Medidas resumo [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula5.pdf">Variáveis bidimensionais [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula6.pdf">Variáveis aleatórias contínuas [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula7.pdf">Inferência estatística [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Script1.R">R script - Inferência estatística</a>
+    </li>
+    <li>
+      <a href="Slides/Aula8.pdf">Teste de hipóteses [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula9.pdf">Tópicos Especiais [PDF]</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/wbonat/ce001m-2017-1">GitHub</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Notas</h1>
+
+</div>
+
+
+<pre class="r"><code>file = &quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaMANHA/Prova1NOTA.csv&quot;
+prova1 &lt;- read.csv(file, header = TRUE)
+kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;l&quot;), digits = 2)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Aluno</th>
+<th align="center">Prova.1</th>
+<th align="center">Prova.2</th>
+<th align="center">Prova.3</th>
+<th align="center">Prova.4</th>
+<th align="center">Prova.5</th>
+<th align="center">Prova.6</th>
+<th align="center">Prova.7</th>
+<th align="center">Prova.8</th>
+<th align="center">Prova.9</th>
+<th align="center">Media</th>
+<th align="center">Exame</th>
+<th align="left">Nota.final</th>
+<th align="left">Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1 45C GRR20127181 ALLYFER DOS SANTOS ZIEMMER</td>
+<td align="center">8,00</td>
+<td align="center">4,67</td>
+<td align="center">6,00</td>
+<td align="center">6,00</td>
+<td align="center">6,00</td>
+<td align="center">10,00</td>
+<td align="center">4,00</td>
+<td align="center">5,33</td>
+<td align="center">6,50</td>
+<td align="center">6,28</td>
+<td align="center">2,1</td>
+<td align="left">4,2</td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">2 31C GRR20130218 AMANDA MOLETTA GONTARSKI</td>
+<td align="center">7,33</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">6,00</td>
+<td align="center">8,00</td>
+<td align="center">8,67</td>
+<td align="center">8,66</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">8,30</td>
+<td align="center">NA</td>
+<td align="left">8,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">3 31C GRR20122899 AMANDA VENTURA FIRMINO DA SILVA</td>
+<td align="center">8,67</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">6,67</td>
+<td align="center">9,33</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">7,56</td>
+<td align="center">NA</td>
+<td align="left">7,6</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">4 31C GRR20141524 ANA BEATRIZ ROSCIA COSTA</td>
+<td align="center">8,66</td>
+<td align="center">7,33</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">8,66</td>
+<td align="center">4,67</td>
+<td align="center">2,67</td>
+<td align="center">6,67</td>
+<td align="center">7,50</td>
+<td align="center">6,91</td>
+<td align="center">NA</td>
+<td align="left">6,9</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">5 31C GRR20141563 ANGELICA ARAUJO HILLMAN</td>
+<td align="center">7,33</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">6,67</td>
+<td align="center">6,00</td>
+<td align="center">10,00</td>
+<td align="center">5,33</td>
+<td align="center">8,66</td>
+<td align="center">10,00</td>
+<td align="center">7,48</td>
+<td align="center">NA</td>
+<td align="left">7,5</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">6 31C GRR20141789 BRUNA WUILLEUMIER SALEMME</td>
+<td align="center">9,33</td>
+<td align="center">7,33</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">10,00</td>
+<td align="center">9,33</td>
+<td align="center">5,33</td>
+<td align="center">9,33</td>
+<td align="center">8,60</td>
+<td align="center">8,36</td>
+<td align="center">NA</td>
+<td align="left">8,4</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">7 31C GRR20140471 CAROLINE BURILLE MORETTI</td>
+<td align="center">8,00</td>
+<td align="center">6,00</td>
+<td align="center">6,67</td>
+<td align="center">6,67</td>
+<td align="center">8,67</td>
+<td align="center">8,00</td>
+<td align="center">6,00</td>
+<td align="center">6,00</td>
+<td align="center">9,60</td>
+<td align="center">7,29</td>
+<td align="center">NA</td>
+<td align="left">7,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">8 31C GRR20145451 EDUARDO MIGUEL ZANETTE CORREIA</td>
+<td align="center">8,67</td>
+<td align="center">6,67</td>
+<td align="center">6,67</td>
+<td align="center">7,33</td>
+<td align="center">8,67</td>
+<td align="center">8,67</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">7,78</td>
+<td align="center">NA</td>
+<td align="left">7,8</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">9 31C GRR20127344 ELISANGELA MARIA LOTTERMANN</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">9,33</td>
+<td align="center">6,00</td>
+<td align="center">10,00</td>
+<td align="center">6,00</td>
+<td align="center">3,33</td>
+<td align="center">8,67</td>
+<td align="center">9,10</td>
+<td align="center">7,23</td>
+<td align="center">NA</td>
+<td align="left">7,2</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">10 31C GRR20131301 ELY VANESSA FERREIRA</td>
+<td align="center">6,67</td>
+<td align="center">4,67</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">4,67</td>
+<td align="center">4,67</td>
+<td align="center">6,00</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">6,96</td>
+<td align="center">NA</td>
+<td align="left">7,0</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">11 31C GRR20101558 EMANUELLE PINHEIRO</td>
+<td align="center">5,33</td>
+<td align="center">8,66</td>
+<td align="center">5,33</td>
+<td align="center">5,33</td>
+<td align="center">5,33</td>
+<td align="center">6,67</td>
+<td align="center">10,00</td>
+<td align="center">5,33</td>
+<td align="center">10,00</td>
+<td align="center">6,89</td>
+<td align="center">NA</td>
+<td align="left">6,9</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">12 31C GRR20141942 EVELYN VIEIRA</td>
+<td align="center">6,67</td>
+<td align="center">6,00</td>
+<td align="center">8,00</td>
+<td align="center">5,33</td>
+<td align="center">6,67</td>
+<td align="center">6,00</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">8,30</td>
+<td align="center">6,70</td>
+<td align="center">NA</td>
+<td align="left">6,7</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">13 31C GRR20142421 FLAVIA FERNANDA WEBER DE SOUZA</td>
+<td align="center">5,33</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">9,33</td>
+<td align="center">4,67</td>
+<td align="center">4,67</td>
+<td align="center">8,67</td>
+<td align="center">10,00</td>
+<td align="center">7,41</td>
+<td align="center">NA</td>
+<td align="left">7,4</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">14 31C GRR20127353 FLAVIA GULAK MAIA</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">15 41A GRR20152635 GIULIA GABRIELA BOTAN</td>
+<td align="center">6,66</td>
+<td align="center">4,00</td>
+<td align="center">7,33</td>
+<td align="center">8,67</td>
+<td align="center">7,33</td>
+<td align="center">5,33</td>
+<td align="center">3,33</td>
+<td align="center">6,67</td>
+<td align="center">0,00</td>
+<td align="center">5,48</td>
+<td align="center">3,7</td>
+<td align="left">4,6</td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">16 31C GRR20131845 GIULIA MOREIRA COUTO ARAUJO</td>
+<td align="center">9,33</td>
+<td align="center">6,66</td>
+<td align="center">8,00</td>
+<td align="center">6,67</td>
+<td align="center">4,67</td>
+<td align="center">8,00</td>
+<td align="center">6,67</td>
+<td align="center">9,33</td>
+<td align="center">8,60</td>
+<td align="center">7,55</td>
+<td align="center">NA</td>
+<td align="left">7,5</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">17 31C GRR20142738 ISABELA ROGOSKI PERES</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">18 31C GRR20132191 ISIS DANNIELE CURY DA CRUZ</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">5,33</td>
+<td align="center">4,67</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">8,60</td>
+<td align="center">7,55</td>
+<td align="center">NA</td>
+<td align="left">7,5</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">19 31C GRR20143144 JEHINY ELOISE ANDRADE XAVIER</td>
+<td align="center">8,00</td>
+<td align="center">5,33</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">1,48</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">20 35A GRR20102715 JHENIFER MACIEL CORREA</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">21 41A GRR20120643 JOAO CARLOS MARTINS</td>
+<td align="center">0,00</td>
+<td align="center">4,00</td>
+<td align="center">0,00</td>
+<td align="center">4,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,89</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">22 31C GRR20142928 JOAO LUIS MACHADO PIETSCH</td>
+<td align="center">6,67</td>
+<td align="center">9,33</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">1,78</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">23 31C GRR20113106 JULIANO SEITI ALVES KUBO</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">24 31C GRR20142908 LARISSA DE MELO SCHROEDER</td>
+<td align="center">7,33</td>
+<td align="center">9,33</td>
+<td align="center">5,33</td>
+<td align="center">6,67</td>
+<td align="center">8,67</td>
+<td align="center">8,67</td>
+<td align="center">0,00</td>
+<td align="center">8,67</td>
+<td align="center">9,60</td>
+<td align="center">7,14</td>
+<td align="center">NA</td>
+<td align="left">7,1</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">25 31C GRR20132857 LETICIA OLIVEIRA DO CARMO DALOSKI</td>
+<td align="center">0,00</td>
+<td align="center">8,00</td>
+<td align="center">8,67</td>
+<td align="center">4,67</td>
+<td align="center">8,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">3,26</td>
+<td align="center">0</td>
+<td align="left">1,6</td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">26 31C GRR20143425 LETICIA WONS</td>
+<td align="center">8,67</td>
+<td align="center">8,00</td>
+<td align="center">8,66</td>
+<td align="center">7,33</td>
+<td align="center">8,00</td>
+<td align="center">8,67</td>
+<td align="center">3,33</td>
+<td align="center">8,67</td>
+<td align="center">10,00</td>
+<td align="center">7,93</td>
+<td align="center">NA</td>
+<td align="left">7,9</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">27 45C GRR20127175 LOUISE TIMOTEO</td>
+<td align="center">9,33</td>
+<td align="center">8,00</td>
+<td align="center">7,33</td>
+<td align="center">5,33</td>
+<td align="center">6,67</td>
+<td align="center">9,33</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">7,63</td>
+<td align="center">NA</td>
+<td align="left">7,6</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">28 31C GRR20133012 LUCAS MIGUEL MUSOLON</td>
+<td align="center">5,33</td>
+<td align="center">8,67</td>
+<td align="center">8,67</td>
+<td align="center">7,33</td>
+<td align="center">9,33</td>
+<td align="center">7,33</td>
+<td align="center">5,33</td>
+<td align="center">8,67</td>
+<td align="center">7,60</td>
+<td align="center">7,58</td>
+<td align="center">NA</td>
+<td align="left">7,6</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">29 45C GRR20145192 LUCAS TREVISAN FRANCA DE LIMA</td>
+<td align="center">9,33</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">6,67</td>
+<td align="center">8,00</td>
+<td align="center">8,00</td>
+<td align="center">6,67</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">8,30</td>
+<td align="center">NA</td>
+<td align="left">8,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">30 31C GRR20143508 MARIA AUGUSTA POERSCH</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">6,66</td>
+<td align="center">6,00</td>
+<td align="center">8,66</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">4,00</td>
+<td align="center">6,96</td>
+<td align="center">NA</td>
+<td align="left">7,0</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">31 45C GRR20133382 MARINA CANDIDO CARDOSO</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">32 31C GRR20113894 MARINA VALQUIRIA VATTE</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">33 76B GRR20120187 MARISA DIAS DA SILVA</td>
+<td align="center">6,67</td>
+<td align="center">6,00</td>
+<td align="center">4,67</td>
+<td align="center">6,00</td>
+<td align="center">2,67</td>
+<td align="center">4,67</td>
+<td align="center">4,67</td>
+<td align="center">5,33</td>
+<td align="center">0,00</td>
+<td align="center">4,52</td>
+<td align="center">5,5</td>
+<td align="left">5,0</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">34 31C GRR20141289 MATHEUS MACIEL ALCANTARA SALLES</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">9,33</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">7,33</td>
+<td align="center">6,00</td>
+<td align="center">8,00</td>
+<td align="center">10,00</td>
+<td align="center">8,22</td>
+<td align="center">NA</td>
+<td align="left">8,2</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">35 31C GRR20133607 MONICA CORRAL BLANCO</td>
+<td align="center">6,67</td>
+<td align="center">9,33</td>
+<td align="center">8,67</td>
+<td align="center">6,00</td>
+<td align="center">6,67</td>
+<td align="center">6,67</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">8,60</td>
+<td align="center">7,25</td>
+<td align="center">NA</td>
+<td align="left">7,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">36 31C GRR20133617 MONIQUE SCHREINER</td>
+<td align="center">8,67</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">8,00</td>
+<td align="center">8,67</td>
+<td align="center">8,67</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">10,00</td>
+<td align="center">9,04</td>
+<td align="center">NA</td>
+<td align="left">9,0</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">37 31C GRR20140991 PATRICIA PERINAZZO</td>
+<td align="center">6,67</td>
+<td align="center">10,00</td>
+<td align="center">8,00</td>
+<td align="center">6,66</td>
+<td align="center">6,67</td>
+<td align="center">6,00</td>
+<td align="center">4,00</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">7,26</td>
+<td align="center">NA</td>
+<td align="left">7,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">38 31C GRR20143992 PAULA GIOVANNA CIAPPARINI</td>
+<td align="center">8,67</td>
+<td align="center">6,67</td>
+<td align="center">7,33</td>
+<td align="center">6,67</td>
+<td align="center">6,67</td>
+<td align="center">7,33</td>
+<td align="center">6,00</td>
+<td align="center">9,33</td>
+<td align="center">10,00</td>
+<td align="center">7,63</td>
+<td align="center">NA</td>
+<td align="left">7,6</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">39 31C GRR20144018 PAULA VALESKA STICA</td>
+<td align="center">8,67</td>
+<td align="center">7,33</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">1,78</td>
+<td align="center"></td>
+<td align="left">0,9</td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">40 76B GRR20104840 ROSANA MARIA RODRIGUES DE PAULA</td>
+<td align="center">7,33</td>
+<td align="center">4,66</td>
+<td align="center">8,66</td>
+<td align="center">8,67</td>
+<td align="center">8,00</td>
+<td align="center">4,00</td>
+<td align="center">3,33</td>
+<td align="center">6,00</td>
+<td align="center">2,00</td>
+<td align="center">5,85</td>
+<td align="center">8,7</td>
+<td align="left">7,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">41 31C GRR20105088 TANIA DAHIANA RUIZ DAS NEVES</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center">0,00</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">42 41A GRR20165807 THATIANE CRISTYNE ALVES VASSOLER</td>
+<td align="center">8,00</td>
+<td align="center">4,67</td>
+<td align="center">6,00</td>
+<td align="center">6,00</td>
+<td align="center">4,67</td>
+<td align="center">4,67</td>
+<td align="center">6,67</td>
+<td align="center">4,67</td>
+<td align="center">1,00</td>
+<td align="center">5,15</td>
+<td align="center">6,7</td>
+<td align="left">5,9</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">43 31C GRR20127341 TIAGO HENRIQUE WESTPHAL</td>
+<td align="center">7,33</td>
+<td align="center">9,33</td>
+<td align="center">8,67</td>
+<td align="center">9,33</td>
+<td align="center">9,33</td>
+<td align="center">8,67</td>
+<td align="center">6,67</td>
+<td align="center">6,67</td>
+<td align="center">0,00</td>
+<td align="center">7,33</td>
+<td align="center">NA</td>
+<td align="left">7,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="even">
+<td align="left">44 31C GRR20144496 VALERIA SCHUARTZ</td>
+<td align="center">9,33</td>
+<td align="center">8,00</td>
+<td align="center">8,67</td>
+<td align="center">7,33</td>
+<td align="center">9,33</td>
+<td align="center">8,67</td>
+<td align="center">6,00</td>
+<td align="center">7,33</td>
+<td align="center">10,00</td>
+<td align="center">8,30</td>
+<td align="center">NA</td>
+<td align="left">8,3</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">Gabriela Mesquita Rosa</td>
+<td align="center">6,66</td>
+<td align="center">4,67</td>
+<td align="center">6,00</td>
+<td align="center">6,67</td>
+<td align="center">4,67</td>
+<td align="center">4,00</td>
+<td align="center">3,33</td>
+<td align="center">5,33</td>
+<td align="center">0,00</td>
+<td align="center">4,59</td>
+<td align="center">2</td>
+<td align="left">3,3</td>
+<td align="left">Reprovado</td>
+</tr>
+<tr class="even">
+<td align="left">Lucas D’Omico Silva</td>
+<td align="center">6,66</td>
+<td align="center">5,33</td>
+<td align="center">7,33</td>
+<td align="center">8,67</td>
+<td align="center">4,67</td>
+<td align="center">5,33</td>
+<td align="center">2,67</td>
+<td align="center">6,67</td>
+<td align="center">0,00</td>
+<td align="center">5,26</td>
+<td align="center">5,5</td>
+<td align="left">5,4</td>
+<td align="left">Aprovado</td>
+</tr>
+<tr class="odd">
+<td align="left">Luana Maria de Oliveira</td>
+<td align="center">4,00</td>
+<td align="center">4,66</td>
+<td align="center">4,66</td>
+<td align="center">5,33</td>
+<td align="center">3,33</td>
+<td align="center">6,67</td>
+<td align="center">4,00</td>
+<td align="center">6,67</td>
+<td align="center">0,00</td>
+<td align="center">4,37</td>
+<td align="center">1</td>
+<td align="left">2,7</td>
+<td align="left">Reprovado</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
