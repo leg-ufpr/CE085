@@ -9,7 +9,7 @@ output:
 source("setup_knitr.R")
 ```
 
-Parte I - Introdução ao pensamento estatístico 
+**Parte I - Introdução ao pensamento estatístico**
 
 **Semana 1**
 
@@ -17,81 +17,121 @@ Parte I - Introdução ao pensamento estatístico
    - **02/08**: Idéias - população, amostra, amostragem e pensamento frequentista.
    - **04/08**: Idéias - modelos estatístico, suporte, parâmetros, estimadores e estimativas.
    
-** Semana 2 **
+**Semana 2**
+
   - **07/08**: Idéias: propriedades de estimadores, não-viés, consistência, distribuição e eficiência.
   - **09/08**: Consolidação dos conceitos apresentados. 
   - **11/08**: Exemplos baseados em simulação das propriedades apresentadas.
-** Semana 3 **
+  
+**Semana 3**
+
   - **14/08**: Revisão geral e formalização matemática. 
   - **16/08**: Revisão geral e formalização matemática. 
   - **18/08**: Revisão geral e formalização matemática.
-** Semana 4 **
-Parte II - Revisão e exemplificação computacional de ferramentas da teoria de probabilidades.
+
+**Parte II - Revisão e exemplificação computacional de ferramentas da teoria de probabilidades.**
+
+**Semana 4**
+
   - **21/08**: Exemplo motivacional.
   - **23/08**: Lei dos grandes números (LLN) e tipos de convergência.
   - **25/08**: Consistência de estimadores. Desigualdade de Chebychev's, Chebychev's LLN. Discussão tipos de convergência.
-** Semana 5 **
+  
+**Semana 5**
+
   - **28/08**: Kolmogorov's LLN, Markov's LLN, LLNs para v.a correlacionadas.
   - **30/08**: Resultados para manipulação de limites em probabilidade.
   - **01/09**: Exemplos de simulação.
-** Semana 6 **
+  
+**Semana 6**
+
   - **04/09**: Convergência em distribuição e Teorema Central do Limite-CLT (Lindeberg-Levy, Lindeberg-Levy multivariado, Lindeberg-Feller).
   - **06/09**: Liapounov's CLT, normalidade assintótica e manipulação de CLT's.
   - **08/09**: Método detal e revisão geral.
-** Semana 7 **
+  
+**Semana 7**
+
   - **11/09**: Aula vaga para cobrir possíveis pontos adicionais ou que não deu tempo nas semanas anteriores.
   - **13/09**: Aula vaga para cobrir possíveis pontos adicionais ou que não deu tempo nas semanas anteriores.
   - **15/09**: Avaliação 1.
-** Semana 8 **
-Parte III - Inferência estatística
+  
+**Parte III - Inferência estatística**
+
+**Semana 8**
+
   - **18/09**: Verossimilhança e log-verossimilhança.
   - **20/09**: Função escore e informação de Fisher.
   - **22/09**: Informação observada.
-** Semana 9 **  
+  
+**Semana 9**  
+
   - **25/09**: Desigualdade de Cramér-Rao.
   - **27/09**: Normalidade assintótica da função escore.
   - **29/09**: Estimador de máxima verossimilhança (MLE).
-** Semana 10 **  
+  
+**Semana 10**  
+
   - **02/10**: Familia exponencial de distribuições.
   - **04/10**: Consistência do MLE.
   - **06/10**: Eficiência e normalidade assintótica do MLE.
-** Semana 11 **  
+  
+**Semana 11**  
+
   - **09/10**: Exemplos: A distribuição Weibull e modelos de locação.
   - **11/10**: Vetores de parâmetros: o vetor escore e a matrix de informação de Fisher.
   - **13/10**: Consistência e normalidade assintótica do MLE, ortogonalidade.
-** Semana 12 **  
+  
+**Semana 12**  
+
   - **16/10**: Exemplos: Modelos exponenciais de dispersão e regressão linear.
   - **18/10**: Suficiência. Critério da fatorização de Neyman-Fisher.
   - **20/10**: Teorema de Rao-Blackwell e Lehmann-Scheffê.
-** Semana 13 ** 
+  
+**Semana 13** 
+
   - **23/10**: Teste da razão de verossimilhança e outros testes para grandes amostras.
   - **25/10**: Continuação e exemplos.
   - **27/10**: Avaliação 2.
-** Semana 14 ** 
-Parte IV - Computação e Inferência estatística
+
+**Parte IV - Computação e Inferência estatística.**
+
+**Semana 14** 
+
   - **30/10**: Entendendo distribuições de probabilidade. Estimação pontual e intervalos de confiança assintóticos.
   - **01/11**: Testes de hipóteses e verossimilhança perfilhada.
   - **03/11**: Desenhando estudos de simulação para avaliar propriedades de estimadores, intervalos de confiança e testes de hipóteses.
-** Semana 15 ** 
+  
+**Semana 15** 
+
   - **06/11**: Prática I: Programando a função de probabilidade ou densidade probabilidade. Verossimilhança, log-verossimilhança e maximização numérica.
   - **08/11**: Prática II: Intervalos de confiança e teste de hipóteses.
   - **10/11**: Prática III: Programando melhores algorithmos de maximização (Newthon-Raphson e Fisher-Scoring).
-** Semana 16 ** 
+  
+**Semana 16** 
+
   - **13/11**: Trabalho prático.
   - **15/11**: Trabalho prático.
   - **17/11**: Trabalho prático.
-** Semana 17 ** 
+  
+**Semana 17** 
+
   - **13/11**: Apresentação trabalho prático.
   - **15/11**: Apresentação trabalho prático.
   - **17/11**: Apresentação trabalho prático.
-** Semana 18 ** 
+  
+**Semana 18** 
+
   - **20/11**: Apresentação trabalho prático.
   - **29/11**: Apresentação trabalho prático.
   - **01/12**: Apresentação trabalho prático.
-FIM DO SEMESTRE LETIVO
-** Semana 19 ** Semana de estudos
+  - FIM DO SEMESTRE LETIVO
+  
+**Semana 19** Semana de estudos
+
   - **05/12**: Entrega final do trabalho prático.
-** Semana 20 ** Semanda de finais.
+  
+**Semana 20** Semanda de finais.
+
   - **15/12**: Exame final.
 
 ## Notas

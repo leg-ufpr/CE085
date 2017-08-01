@@ -5,17 +5,12 @@ output:
     toc: false
 ---
 
-O curso não prevê conteúdo computacional. Entretanto todo o conteúdo
-abordado pode ser tratado computacionalmente por planilhas eletrônicas
-(como por exemplo o LibreOffice), linguagens ou programas estatísticos.
-
-Nas páginas do curso, você verá um botão escrito `Code` acima de algumas
-tabelas e gráficos. Ao clicar nesse botão, é revelado o código que foi
-utilizado para gerar aquele resultado, em linguagem R.
-
-O uso de programas computacionais pode auxiliar o entendimento do
-conteúdo do curso, e os códigos em R servem como ilustração para os
-alunos interessados, mas não será parte da avaliação.
+O curso prevê conteúdo computacional. Nas páginas do curso, você verá 
+um botão escrito `Code` acima de algumas tabelas e gráficos. 
+Ao clicar nesse botão, é revelado o código que foi utilizado para gerar 
+aquele resultado, em linguagem R. O uso de programas computacionais 
+auxilia o entendimento do conteúdo do curso, e os códigos em R servem 
+como ilustração.
 
 ## Programa para estatística
 

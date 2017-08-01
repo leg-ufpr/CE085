@@ -51,9 +51,12 @@ a aplicação prática dos teoremas. O curso é dividido em quatro etapas:
 
 - Introdução ao pensamento estatístico.
 - Revisão e exemplificação computacional de ferramentas da teoria de probabilidade.
-- Métodos para inferência estatística.
+- Inferência estatística.
 - Métodos computacionais para Inferência estatística.
 
+O curso será baseado em três materiais (arquivos formato pdf) que estão 
+disponibilizados na aba "Materiais". Além disso, no decorrer do curso
+um conjunto de notas de aulas no formato de slides será disponibilizado.
 
 <!-- links -->
 

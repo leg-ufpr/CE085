@@ -5,68 +5,21 @@ output:
     toc: false
 ---
 
-## Referências básicas
+- Barndorff-Nielsen, O.E. and Cox, D.R. [Inference and Asymptotics.](https://books.google.com.br/books/about/Inference_and_Asymptotics.html?id=zvEWBIFz-AgC&redir_esc=y) 
+Chapman and Hall, 1994. 
 
-- [Magalhães, MN](http://www.ime.usp.br/~marcos);
-      [Lima, ACP](http://www.ime.usp.br/~acarlos).
-      [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
-      São Paulo: EDUSP, 2008 (6ª edição).
+- Silvey, S.D [Statistical Inference](https://books.google.com.br/books?id=qIKLejbVMf4C&printsec=frontcover&dq=Statistical+Inference&hl=en&sa=X&ved=0ahUKEwj4m-SDvLbVAhWQPpAKHVSzBG8Q6AEIKDAA#v=onepage&q=Statistical%20Inference&f=false). Chapman and Hall, 1983.
 
-- Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
-  [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
-  São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2006 (5ª
-  Edição).
+- Azzalini, A. [Statistical Inference based on the likelihood.](https://books.google.com.br/books?id=hyN6gXHvSo0C&printsec=frontcover&dq=Statistical+Inference+based+on+the+likelihood.&hl=en&sa=X&ved=0ahUKEwiXjcGUvLbVAhVFiZAKHbhdBG8Q6AEIKDAA#v=onepage&q=Statistical%20Inference%20based%20on%20the%20likelihood.&f=false) Chapman and Hall, 1996.
 
+- Casella, G. and Berger, R. L. [Inferência Estatística.](http://www.cengage.com.br/?s=Infer%C3%AAncia+Estat%C3%ADstica) Cengage, 2010.
 
-## Referências complementares
+- Wasserman, L. [All of Statistics: A concise course in Statistical Inference.](http://www.springer.com/br/book/9780387402727) Springer, 2003.
 
-- Andrade, DF; Ogliari, PJ.
-  [Estatística para as ciências agrárias e biológicas, com noções de experimentação](http://www.editora.ufsc.br/publicacao/detalhe/id/537). Florianópolis: Editora da UFSC, 2013.
-- Dantas, CAB.
-  [Probabilidade: um curso introdutório](http://www.edusp.com.br/detlivro.asp?id=41384).
-  São Paulo: EDUSP, 2008.
-- Morettin, LG.
-  [Estatística básica: probabilidade e inferência](http://loja.pearson.com.br/estatistica-basica-probabilidade-e-inferencia-9788576053705/p).
-  São Paulo: Pearson, 2010.
-- Navidi, W.
-  [Probabilidade e estatística para ciências exatas](http://www.grupoa.com.br/livros/matematica-e-estatistica/probabilidade-e-estatistica-para-ciencias-exatas/9788580550733).
-  Porto Alegre: Bookman, 2012.
-- Spiegel, MR; Schiller, J; Srinivasan, A.
-  [Probabilidade e estatística](http://www.grupoa.com.br/livros/matematica-e-estatistica/probabilidade-e-estatistica/9788565837187).
-  Porto Alegre: Bookman, 2013.
-- **Nota:** existem diversos textos de estatística compatíveis com o
-      programa do curso. Consulte o professor sobre a adequação de
-      qualquer outra referência bibliográfica.
+- Sen, P. K. and Singer, J. M. [Large Sample Methods in Statistics](https://books.google.com.br/books/about/Large_Sample_Methods_in_Statistics.html?id=Q-8Tp201fGMC&redir_esc=y) Chapman and Hall, 1993.
 
-## Referências *online*
-
-- [Coursera](https://pt.coursera.org)
-- [Kahn Academy](http://www.khanacademy.org) vídeos sobre diversos
-      assuntos, incluindo sessões especificas de estatística e
-      probabilidade.
-- [Udacity Online courses](http://www.udacity.com). Ver em particular:
-    - [Introduction to Statistics](https://www.udacity.com/course/st101)
+- Tanner, M. A. [Tools for Statistical Inference](https://books.google.com.br/books?id=CAPrBwAAQBAJ&printsec=frontcover&dq=Tools+for+Statistical+Inference&hl=en&sa=X&ved=0ahUKEwiuqJawvrbVAhVEhZAKHVGrAd8Q6AEIKDAA#v=onepage&q=Tools%20for%20Statistical%20Inference&f=false) Springer, 1996.
 
 ## Leituras complementares
 
-- Hilborn, R; Mangel, M.
-  [The ecological detective: confronting models with data](http://press.princeton.edu/titles/5987.html).
-  Princeton University Press, 1997.
-- Huff, D.
-  [Como mentir com estatística](http://www.intrinseca.com.br/livro/624/).
-  Rio de Janeiro: Intrínseca, 2016.
-- Mlodinow, L.
-  [O andar do bêbado. Como o acaso determina nossas vidas](http://zahar.com.br/livro/o-andar-do-b%C3%AAbado).
-  Rio de Janeiro: Zahar, 2009.
-- Oakley, B.
-  [Aprendendo a aprender. Como ter sucesso em matemática, ciências ou qualquer outra matéria](http://www.infopress.com.br).
-  São Paulo: Infopress, 2015.
-- Pólya, G.
-  [How to solve it](https://www.penguin.co.uk/books/12619/how-to-solve-it).
-  London: Penguin Books, 1990.
-- Salsburg, D.
-  [Uma senhora toma chá. Como a estatística revolucionou a ciência no século XX](http://www.zahar.com.br/livro/uma-senhora-toma-cha).
-  Rio de Janeiro: Zahar, 2009.
-- Wheelan, C.
-  [Estatística: o que é, para que serve, como funciona](http://www.zahar.com.br/livro/estatistica).
-  Rio de Janeiro: Zahar, 2016.
+- Bonat, W. H. and Kokonendji, C. C. [Flexible Tweedie regression models for continuous data.](http://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1318876?journalCode=gscs20) Journal of Statistical Computation and Simulation, 87(11), 2138-2152, 2017. 
