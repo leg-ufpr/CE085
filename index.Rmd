@@ -17,13 +17,13 @@ source("setup_knitr.R")
 # Detalhes da oferta da disciplina
 
 - **Curso:** Bacharelado em Estatística (N)
-- **Período:** segundo semestre de 2017
+- **Período:** primeiro semestre de 2018
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
-    - Segunda, 19:00 - 20:30h, **PA03**
-    - Quarta, 20:45 - 22:15h, **PA02**
-    - Sexta, 19:00 - 20:30h, **PA03**
+    - Segunda, 19:00 - 20:30h, **XX**
+    - Quarta, 20:45 - 22:15h, **XX**
+    - Quinta, 19:00 - 20:30h, **XX**
 - **Horários de atendimento do professor:**
     - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
@@ -34,15 +34,15 @@ source("setup_knitr.R")
     - A média final será a média simples das 2 avaliações e do trabalho (todas tem o mesmo
       peso).
 - **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
-    - **31/07**: Início do semestre letivo
-    - **02/12**: Final do semestre letivo
-    - **11/12-16/12**: Período de exames
+    - **19/02**: Início do semestre letivo
+    - **25/06**: Final do semestre letivo
+    - **02/07-07/07**: Período de exames
 
 # Programa/objetivos da disciplina
 
 O objetivo deste curso é apresentar os conceitos básicos da inferência
 estatística. O curso introduz as principais idéias do pensamento
-estatístico do ponto de vista frequentista. Enfâse é dada a métodos de 
+estatístico do ponto de vista frequentista. Ênfase é dada a métodos de 
 estimação e suas propriedades assintóticas. Pretende-se manter o curso
 em um nível intermediário de rigorosidade matemática. A demonstração
 formal dos principais teoremas será feita com riqueza de detalhes e
