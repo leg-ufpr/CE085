@@ -2,14 +2,14 @@
 
 [![Build Status](https://travis-ci.org/fernandomayer/ce001n-2017-1.svg)](https://travis-ci.org/fernandomayer/ce001n-2017-1)
 
-## CE001 - Bioestatística
+## CE085 - Estatística Inferencial
 
-Repositório da disciplina CE001 - Bioestatística, ministrada na UFPR, no
-primeiro semestre de 2017, para o curso de Biologia (noturno).
+Repositório da disciplina CE085 - Estatística Inferencial, ministrada na UFPR, no
+primeiro semestre de 2018, para o curso de Bacharelado em Estatística (noturno).
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
-https://fernandomayer.github.io/ce001n-2017-1/
+https://wbonat.github.io/CE085/
 
 ### Para gerar o site
 
