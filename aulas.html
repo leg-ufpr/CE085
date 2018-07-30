@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Plano de aulas</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE085</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="aulas.html">Aulas</a>
+</li>
+<li>
+  <a href="referencias.html">Referências</a>
+</li>
+<li>
+  <a href="recursos.html">Programas</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Materiais
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Slides/Primer.pdf">Ferramentas de probabilidade [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Notes.pdf">Notas de aula Bent Jorgensen [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/masterSINAPE.pdf">Métodos Computacionais para Inferência estatística [PDF]</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/wbonat/CE085">GitHub</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Plano de aulas</h1>
+
+</div>
+
+
+<p><strong>Parte I - Introdução ao pensamento estatístico</strong></p>
+<p><strong>Semana 1</strong></p>
+<ul>
+<li>Apresentação do curso.</li>
+<li>Idéias - população, amostra, amostragem e pensamento frequentista.</li>
+<li>Idéias - modelos estatístico, suporte, parâmetros, estimadores e estimativas.</li>
+</ul>
+<p><strong>Semana 2</strong></p>
+<ul>
+<li>Idéias: propriedades de estimadores, não-viés, consistência, distribuição e eficiência.</li>
+<li>Consolidação dos conceitos apresentados.</li>
+<li>Exemplos baseados em simulação das propriedades apresentadas.</li>
+</ul>
+<p><strong>Semana 3</strong></p>
+<ul>
+<li>Revisão geral e formalização matemática.</li>
+<li>Revisão geral e formalização matemática.</li>
+<li>Revisão geral e formalização matemática.</li>
+</ul>
+<p><strong>Parte II - Revisão e exemplificação computacional de ferramentas da teoria de probabilidades.</strong></p>
+<p><strong>Semana 4</strong></p>
+<ul>
+<li>Exemplo motivacional.</li>
+<li>Lei dos grandes números (LLN) e tipos de convergência.</li>
+<li>Consistência de estimadores. Desigualdade de Chebychev’s, Chebychev’s LLN. Discussão tipos de convergência.</li>
+</ul>
+<p><strong>Semana 5</strong></p>
+<ul>
+<li>Kolmogorov’s LLN, Markov’s LLN, LLNs para v.a correlacionadas.</li>
+<li>Resultados para manipulação de limites em probabilidade.</li>
+<li>Exemplos de simulação.</li>
+</ul>
+<p><strong>Semana 6</strong></p>
+<ul>
+<li>Convergência em distribuição e Teorema Central do Limite-CLT (Lindeberg-Levy, Lindeberg-Levy multivariado, Lindeberg-Feller).</li>
+<li>Liapounov’s CLT, normalidade assintótica e manipulação de CLT’s.</li>
+<li>Método delta e revisão geral.</li>
+</ul>
+<p><strong>Semana 7</strong></p>
+<ul>
+<li>Aula vaga para cobrir possíveis pontos adicionais ou que não deu tempo nas semanas anteriores.</li>
+<li>Aula vaga para cobrir possíveis pontos adicionais ou que não deu tempo nas semanas anteriores.</li>
+<li>Avaliação 1.</li>
+</ul>
+<p><strong>Parte III - Inferência estatística</strong></p>
+<p><strong>Semana 8</strong></p>
+<ul>
+<li>Verossimilhança e log-verossimilhança.</li>
+<li>Função escore e informação de Fisher.</li>
+<li>Informação observada.</li>
+</ul>
+<p><strong>Semana 9</strong></p>
+<ul>
+<li>Desigualdade de Cramér-Rao.</li>
+<li>Normalidade assintótica da função escore.</li>
+<li>Estimador de máxima verossimilhança (MLE).</li>
+</ul>
+<p><strong>Semana 10</strong></p>
+<ul>
+<li>Familia exponencial de distribuições.</li>
+<li>Consistência do MLE.</li>
+<li>Eficiência e normalidade assintótica do MLE.</li>
+</ul>
+<p><strong>Semana 11</strong></p>
+<ul>
+<li>Exemplos: A distribuição Weibull e modelos de locação.</li>
+<li>Vetores de parâmetros: o vetor escore e a matrix de informação de Fisher.</li>
+<li>Consistência e normalidade assintótica do MLE, ortogonalidade.</li>
+</ul>
+<p><strong>Semana 12</strong></p>
+<ul>
+<li>Exemplos: Modelos exponenciais de dispersão e regressão linear.</li>
+<li>Suficiência. Critério da fatorização de Neyman-Fisher.</li>
+<li>Teorema de Rao-Blackwell e Lehmann-Scheffê.</li>
+</ul>
+<p><strong>Semana 13</strong></p>
+<ul>
+<li>Teste da razão de verossimilhança e outros testes para grandes amostras.</li>
+<li>Continuação e exemplos.</li>
+<li>Avaliação 2.</li>
+</ul>
+<p><strong>Parte IV - Computação e Inferência estatística.</strong></p>
+<p><strong>Semana 14</strong></p>
+<ul>
+<li>Entendendo distribuições de probabilidade. Estimação pontual e intervalos de confiança assintóticos.</li>
+<li>Testes de hipóteses e verossimilhança perfilhada.</li>
+<li>Desenhando estudos de simulação para avaliar propriedades de estimadores, intervalos de confiança e testes de hipóteses.</li>
+</ul>
+<p><strong>Semana 15</strong></p>
+<ul>
+<li>Prática I: Programando a função de probabilidade ou densidade probabilidade. Verossimilhança, log-verossimilhança e maximização numérica.</li>
+<li>Prática II: Intervalos de confiança e teste de hipóteses.</li>
+<li>Prática III: Programando melhores algorithmos de maximização (Newthon-Raphson e Fisher-Scoring).</li>
+</ul>
+<p><strong>Semana 16</strong></p>
+<ul>
+<li>Trabalho prático.</li>
+<li>Trabalho prático.</li>
+<li>Trabalho prático.</li>
+</ul>
+<p><strong>Semana 17</strong></p>
+<ul>
+<li><strong>13/11</strong>: Apresentação trabalho prático.</li>
+<li><strong>15/11</strong>: Apresentação trabalho prático.</li>
+<li><strong>17/11</strong>: Apresentação trabalho prático.</li>
+</ul>
+<p><strong>Semana 18</strong></p>
+<ul>
+<li>Apresentação trabalho prático.</li>
+<li>Apresentação trabalho prático.</li>
+<li>Apresentação trabalho prático.</li>
+<li>FIM DO SEMESTRE LETIVO</li>
+</ul>
+<p><strong>Semana 19</strong> Semana de estudos</p>
+<ul>
+<li>Entrega final do trabalho prático.</li>
+</ul>
+<p><strong>Semana 20</strong> Semanda de finais.</p>
+<ul>
+<li><strong>02/07</strong>: Exame final.</li>
+</ul>
+<div id="notas" class="section level2">
+<h2>Notas</h2>
+<p>As notas estão disponíveis <a href="notas.html">nesta página</a>.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
