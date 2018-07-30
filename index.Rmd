@@ -58,5 +58,5 @@ um conjunto de notas de aulas no formato de slides será disponibilizado.
 
 <!-- links -->
 
-[Wagner Hugo Bonat]: www.leg.ufpr.br/~wagner
+[Wagner Hugo Bonat]: http://www.leg.ufpr.br/~wagner
 [LEG]: http://www.leg.ufpr.br
