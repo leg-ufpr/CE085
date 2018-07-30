@@ -14,8 +14,8 @@ source("setup_knitr.R")
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Bacharelado em Estatística (N)
-- **Período:** primeiro semestre de 2018
+- **Curso:** Bacharelado em Estatística (N).
+- **Período:** Segundo semestre de 2018.
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
@@ -31,7 +31,7 @@ source("setup_knitr.R")
       disciplina.
     - A média final será a média simples das 2 avaliações e do trabalho (todas tem o mesmo
       peso).
-- **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
+- **Datas importantes:** De acordo com a resolução 31/17-CEPE:
     - **30/07**: Início do semestre letivo
     - **03/12**: Final do semestre letivo
     - **10/12-15/12**: Período de exames
@@ -58,6 +58,5 @@ um conjunto de notas de aulas no formato de slides será disponibilizado.
 
 <!-- links -->
 
-[Wagner Hugo Bonat]: https://wbonat.github.io
+[Wagner Hugo Bonat]: www.leg.ufpr.br/~wagner
 [LEG]: http://www.leg.ufpr.br
-[Resolução 62/16 - CEPE]: http://www.est.ufpr.br/calendario/cepe6216.pdf

@@ -1,5 +1,5 @@
 name: "CE085"
-output_dir: "."
+output_dir: "docs"
 exclude: ["README.md"]
 output:
   html_document:

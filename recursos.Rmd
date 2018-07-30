@@ -16,9 +16,7 @@ como ilustração.
 
 - [The R project for Statistical Computing](http://www.r-project.org):
   página do programa **R**
-      - [Curso sobre o uso do R](sofware:material-r) no LEG
-      - [R-rautu](http://git.leg.ufpr.br/fernandomayer/R-rautu) uma
-        introdução ao uso do R
+      - [Curso sobre o uso do R](http://cursos.leg.ufpr.br/ecr/) no LEG
       - [R-Studio](http://www.rstudio.org) um ambiente para facilitar
         uso do R
       - [R-br](https://listas.inf.ufpr.br/cgi-bin/mailman/listinfo/r-br)
