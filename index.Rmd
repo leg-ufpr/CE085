@@ -16,7 +16,7 @@ source("setup_knitr.R")
 
 - **Curso:** Bacharelado em Estatística (N).
 - **Período:** Segundo semestre de 2018.
-- **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
+- **Professor Responsável:** [Wagner Hugo Bonat](http://www.leg.ufpr.br/~wagner), ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
     - Segunda, 19:00 - 20:30h, **PA09**
@@ -58,5 +58,4 @@ um conjunto de notas de aulas no formato de slides será disponibilizado.
 
 <!-- links -->
 
-[Wagner Hugo Bonat]: http://www.leg.ufpr.br/~wagner
 [LEG]: http://www.leg.ufpr.br
