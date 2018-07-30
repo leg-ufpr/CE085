@@ -19,9 +19,9 @@ source("setup_knitr.R")
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
-    - Segunda, 19:00 - 20:30h, **XX**
-    - Quarta, 20:45 - 22:15h, **XX**
-    - Quinta, 19:00 - 20:30h, **XX**
+    - Segunda, 19:00 - 20:30h, **PA09**
+    - Quarta, 20:45 - 22:15h, **PC04**
+    - Quinta, 19:00 - 20:30h, **PC04**
 - **Horários de atendimento do professor:**
     - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
@@ -32,9 +32,9 @@ source("setup_knitr.R")
     - A média final será a média simples das 2 avaliações e do trabalho (todas tem o mesmo
       peso).
 - **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
-    - **19/02**: Início do semestre letivo
-    - **25/06**: Final do semestre letivo
-    - **02/07-07/07**: Período de exames
+    - **30/07**: Início do semestre letivo
+    - **03/12**: Final do semestre letivo
+    - **10/12-15/12**: Período de exames
 
 # Programa/objetivos da disciplina
 
