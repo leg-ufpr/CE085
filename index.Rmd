@@ -9,8 +9,6 @@ output:
 source("setup_knitr.R")
 ```
 
-[![Build Status](https://travis-ci.org/fernandomayer/ce001n-2017-1.svg)](https://travis-ci.org/fernandomayer/ce001-2017-1)
-
 <!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
 <!-- espaço para avisos. Comente quando não utilizar. </div> -->
 
