@@ -25,8 +25,8 @@ navbar:
       href: recursos.html
     - text: "Listas de exercícios"
       menu:
-      - text: "Lista 1 - Revisão de probabilidade"
-      href: Listas/Lista1.pdf
+      - text: "Lista 1 - Revisão de probabilidade [PDF]"
+      href: Lista/Lista1.pdf
     - text: "Materiais"
       menu:
       - text: "Ferramentas de probabilidade [PDF]"
