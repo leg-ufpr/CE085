@@ -25,7 +25,7 @@ navbar:
       href: recursos.html
     - text: "Listas de exercícios"
       menu:
-      - text: "Lista I - Revisão de probabilidade"
+      - text "Lista I - Revisão de probabilidade"
         href: ListaI.html
     - text: "Códigos"
       menu:

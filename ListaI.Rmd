@@ -1,0 +1,107 @@
+---
+title: "Lista de exercícios I - Revisão de probabilidade"
+author: "Wagner Hugo Bonat"
+date: '2018-08-13'
+output: pdf_document
+subtitle: 'Revisão de probabilidade'
+---
+
+```{r, cache=FALSE, include=FALSE}
+source("config/setup.R")
+```
+
+# Probababilidade Básica
+
+1. (Probabilidade Condicional e Independência) Uma empresa produz peças em duas 
+máquinas I e II, que podem apresentar desajustes com probabilidade 
+$0.05$ e $0.10$, respectivamente. No início do dia de operação um teste 
+é realizado e, caso a máquina esteja fora de ajuste, ela ficará sem 
+operar nesse dia passando por revisão técnica. Para cumprir o nível 
+mínimo de produção pelo menos uma das máquinas deve operar.
+Você diria que a empresa corre o risco de não cumprir com suas metas de produção?
+
+2. (Probabilidade Condicional e Independência) 
+Suponha que a probabilidade de um avião decolar no horário é de 
+$P(D) = 0.83$; a probabilidade do avião chegar no horário é de 
+$P(A) = 0.82$; e a probabilidade de decolar e chegar no horário é 
+de $P(D \cap A) = 0.78$. Encontre as probabilidades:
+
+    a) Chegue no horário dado que decolou no horário.
+    b) Decole no horário dado que chegou no horário.
+
+3. (Teorema de Bayes) Uma montadora trabalha com 2 fornecedores (A e B) de
+uma determinada peça. As chances de que uma peça proveniente dos 
+fornecedores A e B esteja fora das especificações são $10\%$ e 
+$5\%$ respectivamente. A montadora recebe $30\%$ das peças do
+fornecedor A e $70\%$ de B. Se uma peça do estoque inteiro é
+escolhido ao acaso:
+
+    a) Calcule a probabilidade de que ela esteja fora das especificações.
+    b) Se uma peça escolhida ao acaso está fora das especificações, qual é a probabilidade que venha do fornecedor fornecedor A?
+
+4. (Teorema de Bayes) Uma empresa de manufatura emprega três planos para 
+o desenvolvimento de um particupar produto. Por razões de custos, os 
+três planos são usados aleatóriamente. Dados históricos mostram que os 
+planos 1, 2 e 3 são usados para $30\%$, $20\%$ e $50\%$ dos produtos, respectivamente. 
+A taxa de defeito é diferente para os três planos, sendo
+$$P(D | P_1) = 0.01, P(D|P_2) = 0.03 \quad \text{e} \quad P(D|P_3) = 0.02.$$
+Se um produto é observado aleatóriamente e verificado defeituoso, qual
+é o plano mais provável de ter sido usado em sua produção?
+
+5. (Distribuições de Probabilidade) Com o objetivo de verificar a resistência à pressão de água, 
+os técnicos de qualidade de uma empresa inspecionam os tubos de 
+PVC produzidos. Os tudos inspecionados têm 6 metros de comprimento
+e são submetidos a grandes pressões até o aparecimento do primeiro
+vazamento, cuja distância a uma das extremidades (fixada à priori)
+é anotada para fins de analise. Escolhe-se um tubo ao acaso para
+ser inspecionado. Queremos calcular a probabilidade de que o vazamento
+esteja, a no máximo 1 metro das extremidades.
+
+6. O intervalo de tempo, em minutos, entre emissões consecutivas
+de uma fonte radioativa é uma variável aleatória com distribuição
+Exponencial de parâmetro $\alpha = 0.2$. Calcule a probabilidade
+de haver uma emissão em um intervalo inferior a 2 minutos.
+
+# Principais distribuições de probabilidade
+
+7. Seja X uma variável aleatória com distribuição Bernoulli de parâmetro $p$, em que $0 < p < 1$. Mostre que $E[X] = p$ e $Var[X] = p(1-p)$. Considere a seguinte parametrização
+
+$$
+p(x)= p^x(1-p)^{1-x}, x \in \{0, 1 \}.
+$$
+
+8. Seja X uma variável aleatória com distribuição binomial de parâmetros $n$ e $p$, em que $n \in \mathbb{N}$ e $p \in [0,1]$. Mostre que $E[X] = np$ e $Var[X] = np(1-p)$. Considere a seguinte parametrização
+
+$$
+p(x) = \binom{n}{x} p^x (1-p)^{n-x}, x \in \{ 0, ..., n \}.
+$$
+
+9. Seja X uma variável aleatória com distribuição Poisson de parâmetro $\theta$, em que $\theta \in \mathbb{R}^{+}$. Mostre que $E[X] = \theta$ e $Var[X] = \theta$. Considere a seguinte parametrização
+
+$$
+p(x) = \frac{\theta^{x} \exp^{-\theta}}{x!}, x \in \mathbb{N}.
+$$
+
+10. Seja X uma variável aleatória com distribuição uniforme de parâmetros $(0, \theta)$, em que $\theta \in \mathbb{R}$. Mostre que $E[X] = \frac{\theta}{2}$ e $Var[X] = \frac{\theta^{2}}{12}$. Considere a seguinte parametrização
+
+$$
+f(x) = \frac{1}{(\theta - 0)}, x \in [0, \theta].
+$$
+
+11. Seja X uma variável aleatória com distribuição exponencial de parâmetro $\theta$, em que $\theta \in \mathbb{R}^{+}$. Mostre que $E[X] = \frac{1}{\theta}$ e $Var[X] = \frac{1}{\theta^2}$. Considere a seguinte parametrização
+
+$$
+f(x) = \theta \exp^{-\theta x}, x \in \mathbb{R}^{+}.
+$$
+
+12. Seja X uma variável aleatória com distribuição gamma de parâmetros $(\alpha, \beta)$, em que $\alpha \in \mathbb{R}^{+}$ e $\beta \in \mathbb{R}^{+}$. Mostre que $E[X] = \frac{\alpha}{\beta}$ e $Var[X] = \frac{\alpha}{\beta^{2}}$. Considere a seguinte parametrização
+
+$$
+f(x) = \frac{\beta^{\alpha}x^{\alpha - 1}\exp^{-\beta x}}{\Gamma(\alpha)}, x \in \mathbb{R}^{+}.
+$$
+
+13. Seja X uma variável aleatória com distribuição Normal de parâmetros $(\mu, \sigma^{2})$, em que $\mu \in \mathbb{R}$ e $\sigma^{2} \in \mathbb{R}^{+}$. Mostre que $E[X] = \mu$ e $Var[X] = \sigma^{2}$. Considere a seguinte parametrização
+
+$$
+f(x) = \frac{1}{\sqrt{2 \pi}\sigma^{2}} \exp\bigg[-\frac{1}{2}\bigg(\frac{x - \mu}{\sigma}\bigg)^{2}\bigg], x \in \mathbb{R}.
+$$
