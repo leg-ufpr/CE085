@@ -21,24 +21,18 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      "HTML-CSS": {
+          scale: 85,
+          availableFonts: ["TeX"],
+      },
+      "TeX": {
+          extensions: ["color.js"]
+      }
+  });
 </script>
+
 
 
 
@@ -69,6 +63,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="config/vignette-style.css" type="text/css" />
 
 </head>
 
@@ -111,7 +106,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -132,6 +126,43 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
 </style>
 
 <script>
@@ -151,7 +182,6 @@ $(document).ready(function () {
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
-
 
 <div class="container-fluid main-container">
 
@@ -269,7 +299,25 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="Slides/Lista1.pdf">Lista 1 - Revisão de probabilidade [PDF]</a>
+      <a href="ListaI.html">Lista I - Revisão de probabilidade</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Códigos
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Code/Script1.R">Script 1</a>
+    </li>
+    <li>
+      <a href="Code/Script2.R">Empresa de calçados</a>
+    </li>
+    <li>
+      <a href="Code/LGN.R">Leis dos Grandes Números</a>
     </li>
   </ul>
 </li>
@@ -291,6 +339,18 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Conjunto de dados
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Dados/dados_pe.csv">Experimento empresa de calçados [csv]</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -300,6 +360,35 @@ $(document).ready(function () {
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
+<style type="text/css">
+div.header {
+    margin-top: 20px;
+    border-bottom: 1px solid #BCBCBC;
+}
+table.header {
+    margin-top: 10px;
+}
+</style>
+
+<table class="header" width="100%" align="center">
+  <tr>
+    <td align="left" valign="bottom" width="180px">
+      <img src="config/LEG.png" width="100%"/>
+    </td>
+    <td align="left" valign="top">
+      <div class="header">
+        <h4 style="font-size: 20px; margin: 10px auto 0 10px">
+          CE085 - Estatística Inferencial
+        </h4>
+        <!-- <h5 style="margin: 0px auto 10px 10px">
+             <a href="http://leg.ufpr.br/~walmes/dsbd/LPG">
+             <code>leg.ufpr.br/~walmes/dsbd/LPG</code>
+             </a>
+             </h5> -->
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div class="fluid-row" id="header">
 
@@ -320,7 +409,7 @@ $(document).ready(function () {
 
 <p>O curso prevê conteúdo computacional. Nas páginas do curso, você verá um botão escrito <code>Code</code> acima de algumas tabelas e gráficos. Ao clicar nesse botão, é revelado o código que foi utilizado para gerar aquele resultado, em linguagem R. O uso de programas computacionais auxilia o entendimento do conteúdo do curso, e os códigos em R servem como ilustração.</p>
 <div id="programa-para-estatistica" class="section level2">
-<h2>Programa para estatística</h2>
+<h2><span class="header-section-number">0.1</span> Programa para estatística</h2>
 <ul>
 <li><a href="http://www.r-project.org">The R project for Statistical Computing</a>: página do programa <strong>R</strong>
 <ul>
@@ -331,7 +420,7 @@ $(document).ready(function () {
 </ul>
 </div>
 <div id="programas-para-matematica-simbolica" class="section level2">
-<h2>Programas para matemática simbólica</h2>
+<h2><span class="header-section-number">0.2</span> Programas para matemática simbólica</h2>
 <ul>
 <li><a href="http://www.wolframalpha.com">Wolfram alpha</a></li>
 <li><a href="http://maxima.sourceforge.net">Maxima</a> (e interface <a href="http://andrejv.github.com/wxmaxima/">wxmaxima</a>)</li>
@@ -339,13 +428,45 @@ $(document).ready(function () {
 </ul>
 </div>
 <div id="outros-recursos" class="section level2">
-<h2>Outros recursos</h2>
+<h2><span class="header-section-number">0.3</span> Outros recursos</h2>
 <ul>
 <li><a href="https://pt-br.libreoffice.org">LibreOffice</a> suíte de programas semelhante ao MS-Office (editor de texto, banco de dados, apresentação e planilha) gratuito</li>
 <li><a href="https://www.google.com/sheets/about">Google sheets</a>. Para instalar o <em>add-on</em> de estatística: - Add-Ons -&gt; Get Add-Ons -&gt; Procure por “Statistics” -&gt; Procure o add-on de “Google Statisticians and Engineers”</li>
 </ul>
 </div>
 
+<style type="text/css">
+hr.footer {
+    border-top: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+table.footer {
+    margin-bottom: 10px;
+}
+img.ufpr {
+    <!-- max-width: 100% !important; -->
+    display: inline;
+    <!-- display: block; -->
+    margin: auto;
+}
+</style>
+
+<hr class="footer"/>
+<center>
+  <table class="footer" width="100%">
+    <tr>
+      <td width="57%"><a href="">
+	  CE085 - Estatística Inferencial
+      </a></td>
+      <td width="25%" align="right">
+        Prof. Wagner Hugo Bonat
+      </td>
+    </tr>
+  </table>
+</center>
+
+<img src="config/ufpr.jpg" class="ufpr" alt="25px" width="25%">
 
 
 
