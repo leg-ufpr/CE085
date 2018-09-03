@@ -19,26 +19,28 @@ source("setup_knitr.R")
    
 **Semana 2**
 
-  - Idéias: propriedades de estimadores, não-viés, consistência, distribuição e eficiência.
-  - Consolidação dos conceitos apresentados. 
-  - Exemplos baseados em simulação das propriedades apresentadas.
+  - Idéias: Verossimilhança.
+  - Idéias: Funções de verossimilhança e escore e estimação pontual.
+  - Idéias: Estimação intervalar e testes de hipóteses.
   
 **Semana 3**
 
-  - Revisão geral e formalização matemática. 
-  - Revisão geral e formalização matemática. 
-  - Revisão geral e formalização matemática.
+  - Prática I - Empresa de calçados.
+  - Prática I - Empresa de calçados.
+  - Prática I - Empresa de calçados.
 
 **Parte II - Revisão e exemplificação computacional de ferramentas da teoria de probabilidades.**
 
 **Semana 4**
 
-  - Exemplo motivacional.
-  - Lei dos grandes números (LLN) e tipos de convergência.
-  - Consistência de estimadores. Desigualdade de Chebychev's, Chebychev's LLN. Discussão tipos de convergência.
+  - Revisão de probabilidade básica.
+  - Revisão de probabilidade básica.
+  - Distribuições de probabilidade.
   
 **Semana 5**
 
+  - Lei dos grandes números (LLN) e tipos de convergência.
+  - Consistência de estimadores. Desigualdade de Chebychev's, Chebychev's LLN. Discussão tipos de convergência.
   - Kolmogorov's LLN, Markov's LLN, LLNs para v.a correlacionadas.
   - Resultados para manipulação de limites em probabilidade.
   - Exemplos de simulação.

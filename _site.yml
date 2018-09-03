@@ -19,14 +19,12 @@ navbar:
       href: index.html
     - text: "Aulas"
       href: aulas.html
-    - text: "Referências"
-      href: referencias.html
-    - text: "Programas"
-      href: recursos.html
     - text: "Listas de exercícios"
       menu:
       - text: "Lista I - Revisão de probabilidade"
         href: ListaI.html
+      - text: "Lista II - Verossimilhança"
+        href: ListaII.html
     - text: "Códigos"
       menu:
       - text: "Script 1"
@@ -35,6 +33,14 @@ navbar:
         href: Code/Script2.R
       - text: "Leis dos Grandes Números"
         href: Code/LGN.R
+    - text: "Slides"
+      menu:
+      - text: "Revisão: Probabilidade Básica [PDF]"
+        href: Slides/Rev_ProbI.pdf
+      - text: "Revisão: Va's e Distribuições [PDF]"
+        href: Slides/Rev_ProbII.pdf
+      - text: "Revisão: Teoremas Limites [PDF]"
+        href: Slides/TeoremasLimites.pdf
     - text: "Materiais"
       menu:
       - text: "Ferramentas de probabilidade [PDF]"
@@ -47,6 +53,11 @@ navbar:
       menu:
       - text: "Experimento empresa de calçados [csv]"
         href: Dados/dados_pe.csv
+    - text: "Programas"
+      href: recursos.html
+    - text: "Referências"
+      href: referencias.html
+
         
   right:
     - text: GitHub
