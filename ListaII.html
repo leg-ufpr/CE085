@@ -9,9 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Wagner Hugo Bonat" />
 
+<meta name="date" content="2018-08-13" />
 
-<title></title>
+<title>Lista de exercícios II - Verossimilhança e Log-Verossimilhança</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,55 +39,6 @@
 </script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #0000ff; } /* Keyword */
-code > span.ch { color: #008080; } /* Char */
-code > span.st { color: #008080; } /* String */
-code > span.co { color: #008000; } /* Comment */
-code > span.ot { color: #ff4000; } /* Other */
-code > span.al { color: #ff0000; } /* Alert */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #008000; font-weight: bold; } /* Warning */
-code > span.cn { } /* Constant */
-code > span.sc { color: #008080; } /* SpecialChar */
-code > span.vs { color: #008080; } /* VerbatimString */
-code > span.ss { color: #008080; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { } /* Variable */
-code > span.cf { color: #0000ff; } /* ControlFlow */
-code > span.op { } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #ff4000; } /* Preprocessor */
-code > span.do { color: #008000; } /* Documentation */
-code > span.an { color: #008000; } /* Annotation */
-code > span.cv { color: #008000; } /* CommentVar */
-code > span.at { } /* Attribute */
-code > span.in { color: #008000; } /* Information */
-
-.sourceCode .row {
-  width: 100%;
-}
-.sourceCode {
-  overflow-x: auto;
-}
-.code-folding-btn {
-  margin-right: -30px;
-}
-
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -576,38 +529,28 @@ table.header {
 
 
 
+<h1 class="title toc-ignore">Lista de exercícios II - Verossimilhança e Log-Verossimilhança</h1>
+<h3 class="subtitle"><em>Verossimilhança e Log-Verossimilhança</em></h3>
+<h4 class="author"><em>Wagner Hugo Bonat</em></h4>
+<h4 class="date"><em>2018-08-13</em></h4>
 
 </div>
 
 
-<div id="ce085---2018-1" class="section level1">
-<h1><span class="header-section-number">1</span> CE085 - 2018-1</h1>
-<p><a href="https://travis-ci.org/fernandomayer/ce001n-2017-1"><img src="https://travis-ci.org/fernandomayer/ce001n-2017-1.svg" alt="Build Status" /></a></p>
-<div id="ce085---estatistica-inferencial" class="section level2">
-<h2><span class="header-section-number">1.1</span> CE085 - Estatística Inferencial</h2>
-<p>Repositório da disciplina CE085 - Estatística Inferencial, ministrada na UFPR, no primeiro semestre de 2018, para o curso de Bacharelado em Estatística (noturno).</p>
-<p>Este repositório contém todo o material de aula e os arquivos necessários para gerar a página da disciplina, disponível em: <a href="https://wbonat.github.io/CE085/" class="uri">https://wbonat.github.io/CE085/</a></p>
-<div id="para-gerar-o-site" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Para gerar o site</h3>
-<p>O site é todo construído usando apenas o <a href="http://rmarkdown.rstudio.com">R Markdown</a>, por isso, o código fonte está nos arquivos <code>Rmd</code>. Para gerar o site você precisará das versões mais recentes dos pacotes <code>rmarkdown</code> e <code>knitr</code>.</p>
+<div id="verossimilhanca-e-log-verossimilhanca" class="section level1">
+<h1><span class="header-section-number">1</span> Verossimilhança e Log-verossimilhança</h1>
 <ol style="list-style-type: decimal">
-<li>Copie (ou fork) esse repositório</li>
-<li>Apague o diretório <code>site_libs/</code></li>
-<li><p>Abra o R nesse diretório, carregue os pacotes e renderize o site com <code>render_site()</code></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(knitr)
-<span class="kw">library</span>(rmarkdown)
-<span class="kw">render_site</span>()</code></pre></div></li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu = 10\)</span> e variância conhecida <span class="math inline">\(\sigma^2\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\sigma^2\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Poisson com esperança <span class="math inline">\(\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com <span class="math inline">\(n=1\)</span> e esperança <span class="math inline">\(\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com <span class="math inline">\(n=10\)</span> e esperança <span class="math inline">\(n\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a. iid de uma população Uniforme com parâmetros <span class="math inline">\(a=0\)</span> e <span class="math inline">\(b\)</span> desconhecido. Escreva a função de verossimilhança e log-verossimilhança para <span class="math inline">\(b\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Considere as quatro observações <span class="math inline">\(y_1 &lt; 10\)</span>, <span class="math inline">\(y_2 &gt; 10\)</span>, <span class="math inline">\(5 &lt; y_3 &lt; 10\)</span> e <span class="math inline">\(y_4 = 10\)</span>, escreva a função de verossimilhança e log-verossimilhança supondo que elas são iid provenientes de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Use o R ou qualquer outro software para desenhar a função de verossimilhança em cada caso.</li>
+<li>Repita o exercício (7) para uma população Poisson com esperança <span class="math inline">\(\mu\)</span>.</li>
+<li>Caso você tivesse que escolher entre apenas uma das quatro observações qual você escolheria? Explique.</li>
+<li>Demonstre a desigualdade de Jensen.</li>
 </ol>
-</div>
-<div id="licenca" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Licença</h3>
-<p>O conteúdo deste repositório, das páginas, e do material da disciplina está está disponível por meio da <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">Licença Creative Commons 4.0</a> (Atribuição/NãoComercial/PartilhaIgual).</p>
-<div class="figure">
-<img src="img/CC_by-nc-sa_88x31.png" alt="Licença Creative Commons 4.0" />
-<p class="caption">Licença Creative Commons 4.0</p>
-</div>
-</div>
-</div>
 </div>
 
 <style type="text/css">
