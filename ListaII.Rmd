@@ -42,4 +42,97 @@ para desenhar a função de verossimilhança em cada caso.
 qual você escolheria? Explique.
 10. Demonstre a desigualdade de Jensen.
 
+# Função escore e Informação de Fisher
+
+1. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Normal
+com esperança $\mu$ e variância conhecida $\sigma^2 = 1$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+2. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Binomial
+com esperança $\mu$ e $n$ conhecido. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+3. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Poisson
+com esperança $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+4. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população exponencial
+com esperança $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+5. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população geométrica
+de parâmetro $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+6. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população uniforme com
+parâmetros $a = 0$ e b. 
+
+a) Discuta como o estimador de máxima verossimilhança para b
+pode ser obtido neste caso.
+b) Obtenha a função e escore e verifique se as igualdades de Bartlett
+são válidas.
+
+7. Sejam $Y_1, \ldots, Y_n$ amostras iid com $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$.
+Considere os estimadores
+
+$$\bar{Y} = \sum_{i=1}^n Y_i, \quad \text{para} \quad \mu \quad \text{e} \quad
+\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \mu)^2, \quad \text{para} \quad \sigma^2.$$
+
+a) Mosque que ambos são não viciados.
+b) Obtenha a variância de $\bar{Y}$ e $\hat{\sigma}^2$.
+c) Mosque que ambos são consistentes.
+d) Considere o estimador 
+
+$$ \hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \bar{Y})^2,$$
+mostre que este estimador é viciado.
+d) Proponha uma correção para o estimador em c) de modo a torná-lo
+não viciado.
+
+8. Sejam $Y_1, Y_2, Y_3$ uma amostra iid de uma v.a. com $E(Y_i) = \mu$ e 
+$V(Y_i) = \sigma^2$ em que $\sigma^2$ é conhecido. Considere os
+estimadores
+$\hat{\mu}_1 = \frac{Y_1 + Y_2 + Y_3}{3}$ e $\hat{\mu}_2 = \frac{1}{2}Y_1 + \frac{1}{4}Y_2 + \frac{1}{4}Y_3$.
+
+a) Mostre que ambos são não viciados para $\mu$.
+b) Obtenha a variância de $\hat{\mu}_1$ e $\hat{\mu}_2$.
+c) Mosque que ambos são consistente para $\mu$.
+c) Qual estimador você prefere? Explique.
+
+9. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma v.a. com $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$ em que
+$\sigma^2$ é conhecido. Considere os estimadores lineares 
+$Y_L = \sum_{i=1}^n l_i Y_i$ em que $l_i \geq 0$, $i = 1, \ldots, n$ são
+constantes conhecidas.
+
+a) Sob quais condições $Y_L$ é não viciado?
+b) Sob quais condições $Y_L$ é eficiente?
+c) Sob quais condições $Y_L$ é consistente?
+
+10. Para cada um dos modelos abaixo, encontre o limite inferior de Cramér-Rao.
+
+a) Normal média $\mu$ e variância $\sigma^2$ com $\sigma^2$ conhecido.
+b) Normal média $\mu$ e variância $\sigma^2$ com $\mu$ conhecido.
+c) Poisson média $\mu$.
+d) Binomial $n$ conhecido e probabilidade de sucesso $\mu$.
+e) Geométrica com parâmetro $\mu$.
+f) Exponencial de média $\mu$.
 

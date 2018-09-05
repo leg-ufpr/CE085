@@ -41,6 +41,8 @@ navbar:
         href: Slides/Rev_ProbII.pdf
       - text: "Revisão: Teoremas Limites [PDF]"
         href: Slides/TeoremasLimites.pdf
+      - text: "Log-verossimilhança e suas derivadas [PDF]"
+        href: Slides/CapII.pdf
     - text: "Materiais"
       menu:
       - text: "Ferramentas de probabilidade [PDF]"
