@@ -440,6 +440,9 @@ div.tocify {
     <li>
       <a href="Slides/TeoremasLimites.pdf">Revisão: Teoremas Limites [PDF]</a>
     </li>
+    <li>
+      <a href="Slides/CapII.pdf">Log-verossimilhança e suas derivadas [PDF]</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -550,6 +553,96 @@ table.header {
 <li>Repita o exercício (7) para uma população Poisson com esperança <span class="math inline">\(\mu\)</span>.</li>
 <li>Caso você tivesse que escolher entre apenas uma das quatro observações qual você escolheria? Explique.</li>
 <li>Demonstre a desigualdade de Jensen.</li>
+</ol>
+</div>
+<div id="funcao-escore-e-informacao-de-fisher" class="section level1">
+<h1><span class="header-section-number">2</span> Função escore e Informação de Fisher</h1>
+<ol style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com esperança <span class="math inline">\(\mu\)</span> e <span class="math inline">\(n\)</span> conhecido.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Poisson com esperança <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população exponencial com esperança <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população geométrica de parâmetro <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="6" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população uniforme com parâmetros <span class="math inline">\(a = 0\)</span> e b.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Discuta como o estimador de máxima verossimilhança para b pode ser obtido neste caso.</li>
+<li>Obtenha a função e escore e verifique se as igualdades de Bartlett são válidas.</li>
+</ol>
+<ol start="7" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> amostras iid com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span>. Considere os estimadores</li>
+</ol>
+<p><span class="math display">\[\bar{Y} = \sum_{i=1}^n Y_i, \quad \text{para} \quad \mu \quad \text{e} \quad
+\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \mu)^2, \quad \text{para} \quad \sigma^2.\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Mosque que ambos são não viciados.</li>
+<li>Obtenha a variância de <span class="math inline">\(\bar{Y}\)</span> e <span class="math inline">\(\hat{\sigma}^2\)</span>.</li>
+<li>Mosque que ambos são consistentes.</li>
+<li>Considere o estimador</li>
+</ol>
+<p><span class="math display">\[ \hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \bar{Y})^2,\]</span> mostre que este estimador é viciado. d) Proponha uma correção para o estimador em c) de modo a torná-lo não viciado.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, Y_2, Y_3\)</span> uma amostra iid de uma v.a. com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span> em que <span class="math inline">\(\sigma^2\)</span> é conhecido. Considere os estimadores <span class="math inline">\(\hat{\mu}_1 = \frac{Y_1 + Y_2 + Y_3}{3}\)</span> e <span class="math inline">\(\hat{\mu}_2 = \frac{1}{2}Y_1 + \frac{1}{4}Y_2 + \frac{1}{4}Y_3\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Mostre que ambos são não viciados para <span class="math inline">\(\mu\)</span>.</li>
+<li>Obtenha a variância de <span class="math inline">\(\hat{\mu}_1\)</span> e <span class="math inline">\(\hat{\mu}_2\)</span>.</li>
+<li>Mosque que ambos são consistente para <span class="math inline">\(\mu\)</span>.</li>
+<li>Qual estimador você prefere? Explique.</li>
+</ol>
+<ol start="9" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma v.a. com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span> em que <span class="math inline">\(\sigma^2\)</span> é conhecido. Considere os estimadores lineares <span class="math inline">\(Y_L = \sum_{i=1}^n l_i Y_i\)</span> em que <span class="math inline">\(l_i \geq 0\)</span>, <span class="math inline">\(i = 1, \ldots, n\)</span> são constantes conhecidas.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é não viciado?</li>
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é eficiente?</li>
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é consistente?</li>
+</ol>
+<ol start="10" style="list-style-type: decimal">
+<li>Para cada um dos modelos abaixo, encontre o limite inferior de Cramér-Rao.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Normal média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecido.</li>
+<li>Normal média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span> com <span class="math inline">\(\mu\)</span> conhecido.</li>
+<li>Poisson média <span class="math inline">\(\mu\)</span>.</li>
+<li>Binomial <span class="math inline">\(n\)</span> conhecido e probabilidade de sucesso <span class="math inline">\(\mu\)</span>.</li>
+<li>Geométrica com parâmetro <span class="math inline">\(\mu\)</span>.</li>
+<li>Exponencial de média <span class="math inline">\(\mu\)</span>.</li>
 </ol>
 </div>
 
