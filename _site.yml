@@ -25,6 +25,8 @@ navbar:
         href: ListaI.html
       - text: "Lista II - Verossimilhança"
         href: ListaII.html
+      - text: "Lista III - Teoria assintótica da verossimilhança"
+        href: ListaIII.html
     - text: "Códigos"
       menu:
       - text: "Script 1"
