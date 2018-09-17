@@ -45,6 +45,8 @@ navbar:
         href: Slides/TeoremasLimites.pdf
       - text: "Log-verossimilhança e suas derivadas [PDF]"
         href: Slides/CapII.pdf
+      - text: "Log-verossimilhança e suas derivadas [PDF]"
+        href: Slides/CapIII.pdf
     - text: "Materiais"
       menu:
       - text: "Ferramentas de probabilidade [PDF]"
