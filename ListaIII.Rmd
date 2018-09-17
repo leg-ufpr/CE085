@@ -64,3 +64,12 @@ provenientes de uma população Poisson com esperança $\mu$.
 Obtenha o estimador de máxima verossimilhança para $\mu$. 
 Dica use um otimizador numérico como a optim() em R.
 
+# Família exponencial
+
+1. Escreva as seguintes distribuições na forma da família exponencial:
+    a) Normal (variância conhecida). 
+    b) Exponencial.
+    c) Poisson.
+    d) Binomial.
+    e) Normal inversa.
+    f) Geométrica.
