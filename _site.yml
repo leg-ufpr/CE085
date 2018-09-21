@@ -35,6 +35,8 @@ navbar:
         href: Code/Script2.R
       - text: "Leis dos Grandes Números"
         href: Code/LGN.R
+      - text: "Modelo Weibull"
+        href: Code/Weibull.R
     - text: "Slides"
       menu:
       - text: "Revisão: Probabilidade Básica [PDF]"
