@@ -13,7 +13,6 @@ source("setup_knitr.R")
 ```
 
 ```{r pacotes, include=TRUE}
-file = "/home/wagner/Dropbox/Cursos/Inferencia/2018/Prova1.csv"
-prova1 <- read.csv(file, header = TRUE)
+prova1 <- read.csv("Prova1.csv", header = TRUE)
 kable(prova1, align = c("l","c"), digits = 2)
 ```
