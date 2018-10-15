@@ -47,8 +47,20 @@ navbar:
         href: Slides/TeoremasLimites.pdf
       - text: "Log-verossimilhança e suas derivadas [PDF]"
         href: Slides/CapII.pdf
-      - text: "Log-verossimilhança e suas derivadas [PDF]"
+      - text: "Teoria assintótica [PDF]"
         href: Slides/CapIII.pdf
+      - text: "Vetor de parâmetros [PDF]"
+        href: Slides/CapIV.pdf
+      - text: "Suficiência [PDF]"
+        href: Slides/CapV.pdf
+      - text: "Sistemas não-lineares [PDF]"
+        href: Slides/NonLinearSystem.pdf
+      - text: "Otimização [PDF]"
+        href: Slides/Otimizacao.pdf
+      - text: "Computação I [PDF]"
+        href: Slides/ComputacaoI.pdf
+      - text: "Modelos de regressão [PDF]"
+        href: Slides/ComputacaoII.pdf
     - text: "Materiais"
       menu:
       - text: "Ferramentas de probabilidade [PDF]"
