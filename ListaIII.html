@@ -11,9 +11,8 @@
 
 <meta name="author" content="Wagner Hugo Bonat" />
 
-<meta name="date" content="2018-08-13" />
 
-<title>Lista de exercícios III - Teoria assintótica da verossimilhança</title>
+<title>Lista de exercícios - Estatística Inferencial</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -402,10 +401,7 @@ div.tocify {
       <a href="ListaI.html">Lista I - Revisão de probabilidade</a>
     </li>
     <li>
-      <a href="ListaII.html">Lista II - Verossimilhança</a>
-    </li>
-    <li>
-      <a href="ListaIII.html">Lista III - Teoria assintótica da verossimilhança</a>
+      <a href="ListaIII.html">Lista II - statística Inferencial</a>
     </li>
   </ul>
 </li>
@@ -559,16 +555,120 @@ table.header {
 
 
 
-<h1 class="title toc-ignore">Lista de exercícios III - Teoria assintótica da verossimilhança</h1>
-<h3 class="subtitle"><em>Teoria assintótica</em></h3>
+<h1 class="title toc-ignore">Lista de exercícios - Estatística Inferencial</h1>
+<h3 class="subtitle"><em>Estatística Inferencial</em></h3>
 <h4 class="author"><em>Wagner Hugo Bonat</em></h4>
-<h4 class="date"><em>2018-08-13</em></h4>
 
 </div>
 
 
+<div id="verossimilhanca-e-log-verossimilhanca" class="section level1">
+<h1><span class="header-section-number">1</span> Verossimilhança e Log-verossimilhança</h1>
+<ol style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu = 10\)</span> e variância conhecida <span class="math inline">\(\sigma^2\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\sigma^2\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Poisson com esperança <span class="math inline">\(\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com <span class="math inline">\(n=1\)</span> e esperança <span class="math inline">\(\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com <span class="math inline">\(n=10\)</span> e esperança <span class="math inline">\(n\mu\)</span>. Escreva a verossimilhança e log-verossimilhança para <span class="math inline">\(\mu\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a. iid de uma população Uniforme com parâmetros <span class="math inline">\(a=0\)</span> e <span class="math inline">\(b\)</span> desconhecido. Escreva a função de verossimilhança e log-verossimilhança para <span class="math inline">\(b\)</span> e verifique se as condições de regularidade estão satisfeitas.</li>
+<li>Considere as quatro observações <span class="math inline">\(y_1 &lt; 10\)</span>, <span class="math inline">\(y_2 &gt; 10\)</span>, <span class="math inline">\(5 &lt; y_3 &lt; 10\)</span> e <span class="math inline">\(y_4 = 10\)</span>, escreva a função de verossimilhança e log-verossimilhança supondo que elas são iid provenientes de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Use o R ou qualquer outro software para desenhar a função de verossimilhança em cada caso.</li>
+<li>Repita o exercício (7) para uma população Poisson com esperança <span class="math inline">\(\mu\)</span>.</li>
+<li>Caso você tivesse que escolher entre apenas uma das quatro observações qual você escolheria? Explique.</li>
+<li>Demonstre a desigualdade de Jensen.</li>
+</ol>
+</div>
+<div id="funcao-escore-e-informacao-de-fisher" class="section level1">
+<h1><span class="header-section-number">2</span> Função escore e Informação de Fisher</h1>
+<ol style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Binomial com esperança <span class="math inline">\(\mu\)</span> e <span class="math inline">\(n\)</span> conhecido.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Poisson com esperança <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população exponencial com esperança <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população geométrica de parâmetro <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Obtenha a função escore e a matriz de informação de Fisher para <span class="math inline">\(\mu\)</span>.</li>
+<li>Mostre que a esperança da função escore é zero.</li>
+<li>Mostre que a variância da função escore corresponde a esperança da segunda derivada da log-verossimilhança de <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+<ol start="6" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população uniforme com parâmetros <span class="math inline">\(a = 0\)</span> e b.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Discuta como o estimador de máxima verossimilhança para b pode ser obtido neste caso.</li>
+<li>Obtenha a função e escore e verifique se as igualdades de Bartlett são válidas.</li>
+</ol>
+<ol start="7" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> amostras iid com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span>. Considere os estimadores</li>
+</ol>
+<p><span class="math display">\[\bar{Y} = \sum_{i=1}^n Y_i, \quad \text{para} \quad \mu \quad \text{e} \quad
+\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \mu)^2, \quad \text{para} \quad \sigma^2.\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Mosque que ambos são não viciados.</li>
+<li>Obtenha a variância de <span class="math inline">\(\bar{Y}\)</span> e <span class="math inline">\(\hat{\sigma}^2\)</span>.</li>
+<li>Mosque que ambos são consistentes.</li>
+<li>Considere o estimador</li>
+</ol>
+<p><span class="math display">\[ \hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \bar{Y})^2,\]</span> mostre que este estimador é viciado. d) Proponha uma correção para o estimador em c) de modo a torná-lo não viciado.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, Y_2, Y_3\)</span> uma amostra iid de uma v.a. com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span> em que <span class="math inline">\(\sigma^2\)</span> é conhecido. Considere os estimadores <span class="math inline">\(\hat{\mu}_1 = \frac{Y_1 + Y_2 + Y_3}{3}\)</span> e <span class="math inline">\(\hat{\mu}_2 = \frac{1}{2}Y_1 + \frac{1}{4}Y_2 + \frac{1}{4}Y_3\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Mostre que ambos são não viciados para <span class="math inline">\(\mu\)</span>.</li>
+<li>Obtenha a variância de <span class="math inline">\(\hat{\mu}_1\)</span> e <span class="math inline">\(\hat{\mu}_2\)</span>.</li>
+<li>Mosque que ambos são consistente para <span class="math inline">\(\mu\)</span>.</li>
+<li>Qual estimador você prefere? Explique.</li>
+</ol>
+<ol start="9" style="list-style-type: decimal">
+<li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma v.a. com <span class="math inline">\(E(Y_i) = \mu\)</span> e <span class="math inline">\(V(Y_i) = \sigma^2\)</span> em que <span class="math inline">\(\sigma^2\)</span> é conhecido. Considere os estimadores lineares <span class="math inline">\(Y_L = \sum_{i=1}^n l_i Y_i\)</span> em que <span class="math inline">\(l_i \geq 0\)</span>, <span class="math inline">\(i = 1, \ldots, n\)</span> são constantes conhecidas.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é não viciado?</li>
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é eficiente?</li>
+<li>Sob quais condições <span class="math inline">\(Y_L\)</span> é consistente?</li>
+</ol>
+<ol start="10" style="list-style-type: decimal">
+<li>Para cada um dos modelos abaixo, encontre o limite inferior de Cramér-Rao.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Normal média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecido.</li>
+<li>Normal média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span> com <span class="math inline">\(\mu\)</span> conhecido.</li>
+<li>Poisson média <span class="math inline">\(\mu\)</span>.</li>
+<li>Binomial <span class="math inline">\(n\)</span> conhecido e probabilidade de sucesso <span class="math inline">\(\mu\)</span>.</li>
+<li>Geométrica com parâmetro <span class="math inline">\(\mu\)</span>.</li>
+<li>Exponencial de média <span class="math inline">\(\mu\)</span>.</li>
+</ol>
+</div>
 <div id="distribuicao-assintotica-da-funcao-escore" class="section level1">
-<h1><span class="header-section-number">1</span> Distribuiçao assintótica da função escore</h1>
+<h1><span class="header-section-number">3</span> Distribuiçao assintótica da função escore</h1>
 <ol style="list-style-type: decimal">
 <li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Encontre a função escore para <span class="math inline">\(\mu\)</span> mostre que sua esperança é zero e obtenha a sua distribuição assintótica.</li>
 <li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu = 10\)</span> e variância desconhecida <span class="math inline">\(\sigma^2\)</span>. Encontre a função escore para <span class="math inline">\(\sigma^2\)</span> mostre que sua esperança é zero e obtenha a sua distribuição assintótica.</li>
@@ -578,7 +678,7 @@ table.header {
 </ol>
 </div>
 <div id="estimador-de-maxima-verossimilhanca" class="section level1">
-<h1><span class="header-section-number">2</span> Estimador de máxima verossimilhança</h1>
+<h1><span class="header-section-number">4</span> Estimador de máxima verossimilhança</h1>
 <ol style="list-style-type: decimal">
 <li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância conhecida <span class="math inline">\(\sigma^2 = 1\)</span>. Encontre o estimador de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e obtenha sua distribuição assintótica.</li>
 <li>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu = 10\)</span> e variância desconhecida <span class="math inline">\(\sigma^2\)</span>. Encontre o estimador de máxima verossimilhaça para <span class="math inline">\(\sigma^2\)</span> e obtenha sua distribuição assintótica.</li>
@@ -592,7 +692,7 @@ table.header {
 </ol>
 </div>
 <div id="familia-exponencial" class="section level1">
-<h1><span class="header-section-number">3</span> Família exponencial</h1>
+<h1><span class="header-section-number">5</span> Família exponencial</h1>
 <ol style="list-style-type: decimal">
 <li>Escreva as seguintes distribuições na forma da família exponencial:
 <ol style="list-style-type: lower-alpha">
@@ -603,6 +703,37 @@ table.header {
 <li>Normal inversa.</li>
 <li>Geométrica.</li>
 </ol></li>
+</ol>
+</div>
+<div id="vetor-de-parametros" class="section level1">
+<h1><span class="header-section-number">6</span> Vetor de parâmetros</h1>
+<ol style="list-style-type: decimal">
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Normal com esperança <span class="math inline">\(\mu\)</span> e variância desconhecida <span class="math inline">\(\sigma^2\)</span>. Encontre o estimador de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span>. Obtenha a distribuição assintótica e um intervalo de confiança para ambos.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Gamma com esperança <span class="math inline">\(\mu\)</span> e dispersão desconhecida <span class="math inline">\(\lambda\)</span>. Neste caso a fdp é dada por <span class="math display">\[f(y;\mu,\lambda) = \frac{\lambda^{\lambda} e^{-\lambda}}{\Gamma(\lambda)} y^{-1} \exp\left \{  -\lambda\left ( \frac{y}{\mu} - \log \frac{y}{\mu} - 1 \right ) \right \}.\]</span> Suponha que a seguinte amostra foi observada: <span class="math inline">\(y_i = 35.81, 8.21, 0.02, 8.31, 14.43, 11.48,20.88,2.81,40.03\)</span>. Encontre o estimador e estimativa de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\lambda\)</span> baseado na amostra observada. Numericamente quando necessário. Obtenha a distribuição assintótica e um intervalo de confiança para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\lambda\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população von Mises de parâmetros <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\lambda\)</span>. Neste caso a fdp é dada por <span class="math display">\[f(y;\mu,\lambda) = \frac{1}{2\pi I_0(\lambda)} \exp \left \{ \lambda \cos(y- \mu) \right \}, \quad \text{para} \quad 0 \leq y \leq 2 \pi, \quad \text{e} \quad \mu \in [0, 2\pi), \lambda &gt; 0.\]</span> A função <span class="math inline">\(I_0(\lambda)\)</span> é a função Bessel modificada dada por <span class="math display">\[I_0(\lambda) = \int_{0}^{2\pi} \exp(\lambda \cos y)dy.\]</span> Suponha que a seguinte amostra foi observada: <span class="math inline">\(y_i = 1.17,0.64,0.59,0.38,0.20,0.63,0.67,0.38,0.69,0.72.\)</span>. Encontre o estimador e estimativa de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\lambda\)</span> baseado na amostra observada. Numericamente quando necessário. Obtenha a distribuição assintótica e um intervalo de confiança para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\lambda\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Simplex de parâmetros <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span>. Neste caso a fdp é dada por <span class="math display">\[f(y;\mu,\sigma) = [2\pi\sigma^2 \{y(1-y) \}^3]^{-1/2} \exp \left \{ -\frac{1}{2\sigma^2} \frac{(y - \mu)^2}{y(1-y)\mu^2 (1- \mu)^2}  \right \},\]</span> onde <span class="math inline">\(0 &lt; y, \mu &lt; 1\)</span> e <span class="math inline">\(\sigma^2 &gt; 0\)</span>. Suponha que a seguinte amostra foi observada: <span class="math inline">\(y_i = 0.48,0.48,0.50,0.51,0.50,0.49,0.51,0.52,0.50,0.48.\)</span>. Encontre o estimador e estimativa de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span> baseado na amostra observada. Numericamente quando necessário. Obtenha a distribuição assintótica e um intervalo de confiança para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Beta de parâmetros <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>. Neste caso a fdp é dada por <span class="math display">\[f(y;\alpha,\beta) = \frac{1}{B(\alpha, \beta)} y^{\alpha - 1} (1-y)^{\beta - 1},\]</span> onde <span class="math inline">\(B\)</span> é a função beta definida por <span class="math display">\[ B(\alpha,\beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)}.\]</span> Suponha que a seguinte amostra foi observada: <span class="math inline">\(y_i = 0.48,0.48,0.50,0.51,0.50,0.49,0.51,0.52,0.50,0.48.\)</span>. Encontre o estimador e estimativa de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span> baseado na amostra observada. Numericamente quando necessário. Obtenha a distribuição assintótica e um intervalo de confiança para <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta.\)</span></p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> v.a iid de uma população Power exponencial de parâmetros <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma^2\)</span> e <span class="math inline">\(\rho\)</span>. Neste caso a fdp é dada por <span class="math display">\[f(y;\mu,\sigma,\rho) = \frac{\rho(2\sigma^2)^{-1/\rho}}{2 \Gamma(1/\rho)} \exp \left \{  -\frac{1}{2\sigma^2} |y - \mu|^{\rho}  \right \},\]</span> onde <span class="math inline">\(y, \mu \in \Re\)</span> e <span class="math inline">\(\sigma, \rho &gt; 0\)</span>. Suponha que a seguinte amostra foi observada: $y_i = $. Encontre o estimador e estimativa de máxima verossimilhaça para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span> baseado na amostra observada fixando o <span class="math inline">\(\rho = 1\)</span> e <span class="math inline">\(\rho = 2\)</span>. Proponha uma estratégia para estimar o parâmetro <span class="math inline">\(\rho\)</span>. Numericamente quando necessário. Obtenha a distribuição assintótica e um intervalo de confiança para <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> para os casos anteriores.</p></li>
+</ol>
+</div>
+<div id="suficiencia" class="section level1">
+<h1><span class="header-section-number">7</span> Suficiência</h1>
+<ol style="list-style-type: decimal">
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(B(1,p)\)</span>. Verifique se a estatística <span class="math inline">\(T = \sum_{i=1}^n Y_i\)</span> é suficiente para <span class="math inline">\(p\)</span>.</p></li>
+<li><p>Considere a mesma situação do Exercício 1, com <span class="math inline">\(n = 3\)</span> e <span class="math inline">\(T = Y_1 + 2 Y_2 + Y_3\)</span>. Verifique se <span class="math inline">\(T\)</span> é suficiente para <span class="math inline">\(p\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população Poisson <span class="math inline">\(P(\theta)\)</span>. Verifique se <span class="math inline">\(T = \sum_{i=1}^n Y_i\)</span> é suficiente para <span class="math inline">\(\theta\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(U(0, \theta)\)</span>. Encontre uma estatística suficiente para <span class="math inline">\(\theta\)</span> usando o Critério da fatorização.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(G(\alpha, \beta)\)</span>. Encontre uma estatística conjuntamente suficiente para <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>.</p></li>
+</ol>
+</div>
+<div id="testes-de-hipoteses" class="section level1">
+<h1><span class="header-section-number">8</span> Testes de hipóteses</h1>
+<ol style="list-style-type: decimal">
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra de uma v.a com função densidade <span class="math display">\[ f(y,\theta) = \theta^2 y e^{-\theta y}, \quad y,\theta &gt; 0.\]</span> Obtenha a estatística dos testes LRT, Wald e Score para testar <span class="math inline">\(H_0: \theta = 1\)</span> vs <span class="math inline">\(H_1: \theta = 2\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(N(\mu, 1)\)</span>. Obtenha a estatística dos testes LRT, Wlad e Score para testar <span class="math inline">\(H_0: \mu = 4\)</span> vs <span class="math inline">\(H_1: \mu \neq 4\)</span>. Suponha que a seguinte amostra foi observada <span class="math inline">\(y_i = 4.36,4.47,7.01,5.59,6.61,5.09,5.57,7.99,6.11,4.84\)</span>. Qual a sua conclusao aos níveis <span class="math inline">\(10\%\)</span>, <span class="math inline">\(5\%\)</span> e <span class="math inline">\(1\%\)</span> de significância.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(Exp(\theta)\)</span>. Encontre o LRT, Wald e score testes para testar <span class="math inline">\(H_0: \theta = 1\)</span> vs <span class="math inline">\(H_1: \theta \neq 1\)</span>. Se você observar <span class="math inline">\(y_i = 0.8,1.3,1.8,0.9,1.0\)</span> qual a sua decisão ao nível de <span class="math inline">\(5\%\)</span>.</p></li>
+<li><p>Sejam <span class="math inline">\(Y_1, \ldots, Y_n\)</span> uma amostra iid de uma população <span class="math inline">\(Y \sim N(\mu_Y, 9)\)</span> e <span class="math inline">\(X_1, \ldots, X_m\)</span> uma amostra iid de uma população <span class="math inline">\(X \sim N(\mu_X, 25)\)</span>. Sendo as amostras independentes construa um teste para avaliar <span class="math inline">\(H_0: \mu_Y = \mu_X\)</span> vs <span class="math inline">\(H_1: \mu_Y \neq \mu_X\)</span>. Sendo <span class="math inline">\(n = 9\)</span>, <span class="math inline">\(\sum y_i = 3.4\)</span> e <span class="math inline">\(m = 16\)</span> e <span class="math inline">\(\sum x_i = 4.3\)</span>. Qual a sua conclusão a um nível de significância de <span class="math inline">\(5\%\)</span>?</p></li>
+<li><p>Sejam <span class="math inline">\(X_1, \ldots, X_n\)</span> uma amostra iid de uma população <span class="math inline">\(X \sim P(\theta_1)\)</span> e <span class="math inline">\(Y_1, \ldots, Y_m\)</span> uma amostra iid de uma população <span class="math inline">\(Y \sim N(\theta_2)\)</span>. Sendo as amostras independentes construa um teste para avaliar <span class="math inline">\(H_0: \theta_1 = \theta_2\)</span> vs <span class="math inline">\(H_1: \theta_1 \neq \theta_2\)</span>. Sendo <span class="math inline">\(n = 5\)</span>, <span class="math inline">\(\sum x_i = 3.8\)</span> e <span class="math inline">\(m = 8\)</span> e <span class="math inline">\(\sum y_i = 4.8\)</span>. Qual a sua conclusão a um nível de significância de <span class="math inline">\(5\%\)</span>?</p></li>
 </ol>
 </div>
 
