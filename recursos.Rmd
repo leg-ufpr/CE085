@@ -12,7 +12,7 @@ aquele resultado, em linguagem R. O uso de programas computacionais
 auxilia o entendimento do conteúdo do curso, e os códigos em R servem 
 como ilustração.
 
-## Programa para estatística
+# Programa para estatística
 
 - [The R project for Statistical Computing](http://www.r-project.org):
   página do programa **R**
@@ -22,14 +22,14 @@ como ilustração.
       - [R-br](https://listas.inf.ufpr.br/cgi-bin/mailman/listinfo/r-br)
         é a lista de discussão em português sobre o uso do R
 
-## Programas para matemática simbólica
+# Programas para matemática simbólica
 
 - [Wolfram alpha](http://www.wolframalpha.com)
 - [Maxima](http://maxima.sourceforge.net) (e interface
   [wxmaxima](http://andrejv.github.com/wxmaxima/))
 - [Yacas](http://yacas.sourceforge.net)
 
-## Outros recursos
+# Outros recursos
 
 - [LibreOffice](https://pt-br.libreoffice.org) suíte de programas
   semelhante ao MS-Office (editor de texto, banco de dados, apresentação

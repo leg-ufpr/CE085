@@ -23,7 +23,7 @@ navbar:
       menu:
       - text: "Lista I - Revisão de probabilidade"
         href: ListaI.html
-      - text: "Lista II - statística Inferencial"
+      - text: "Lista II - Estatística Inferencial"
         href: ListaIII.html
     - text: "Códigos"
       menu:
@@ -51,6 +51,8 @@ navbar:
         href: Slides/CapIV.pdf
       - text: "Suficiência [PDF]"
         href: Slides/CapV.pdf
+      - text: "Testes de hipóteses [PDF]"
+        href: Slides/Testes.pdf
       - text: "Sistemas não-lineares [PDF]"
         href: Slides/NonLinearSystem.pdf
       - text: "Otimização [PDF]"
@@ -79,4 +81,4 @@ navbar:
         
   right:
     - text: GitHub
-      href: https://github.com/wbonat/CE085
+      href: https://github.com/leg-ufpr/CE085
