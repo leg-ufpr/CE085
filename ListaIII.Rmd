@@ -1,14 +1,140 @@
 ---
-title: "Lista de exercícios III - Teoria assintótica da verossimilhança"
+title: "Lista de exercícios - Estatística Inferencial"
 author: "Wagner Hugo Bonat"
-date: '2018-08-13'
+date: ''
 output: pdf_document
-subtitle: 'Teoria assintótica'
+subtitle: 'Estatística Inferencial'
 ---
 
 ```{r, cache=FALSE, include=FALSE}
 source("config/setup.R")
 ```
+
+# Verossimilhança e Log-verossimilhança
+
+1. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Normal
+com esperança $\mu$ e variância conhecida $\sigma^2 = 1$. 
+Escreva a verossimilhança e log-verossimilhança para $\mu$ e verifique se as condições de
+regularidade estão satisfeitas.
+2. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Normal
+com esperança $\mu = 10$ e variância conhecida $\sigma^2$. 
+Escreva a verossimilhança e log-verossimilhança para $\sigma^2$ e verifique se as condições de
+regularidade estão satisfeitas.
+3. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Poisson
+com esperança $\mu$. Escreva a verossimilhança e log-verossimilhança para 
+$\mu$ e verifique se as condições de regularidade estão satisfeitas.
+4. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Binomial com $n=1$
+e esperança $\mu$. Escreva a verossimilhança e log-verossimilhança para 
+$\mu$ e verifique se as condições de regularidade estão satisfeitas.
+5. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Binomial com $n=10$
+e esperança $n\mu$. Escreva a verossimilhança e log-verossimilhança para 
+$\mu$ e verifique se as condições de regularidade estão satisfeitas.
+6. Sejam $Y_1, \ldots, Y_n$ v.a. iid de uma população Uniforme com parâmetros
+$a=0$ e $b$ desconhecido. Escreva a função de verossimilhança e log-verossimilhança 
+para $b$ e verifique se as condições de regularidade estão satisfeitas.
+7. Considere as quatro observações $y_1 < 10$, $y_2 > 10$, $5 < y_3 < 10$ e $y_4 = 10$,
+escreva a função de verossimilhança e log-verossimilhança supondo que elas 
+são iid provenientes de uma população Normal com esperança $\mu$ e 
+variância conhecida $\sigma^2 = 1$. Use o R ou qualquer outro software 
+para desenhar a função de verossimilhança em cada caso.
+8. Repita o exercício (7) para uma população Poisson com esperança $\mu$.
+9. Caso você tivesse que escolher entre apenas uma das quatro observações 
+qual você escolheria? Explique.
+10. Demonstre a desigualdade de Jensen.
+
+# Função escore e Informação de Fisher
+
+1. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Normal
+com esperança $\mu$ e variância conhecida $\sigma^2 = 1$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+2. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Binomial
+com esperança $\mu$ e $n$ conhecido. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+3. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Poisson
+com esperança $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+4. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população exponencial
+com esperança $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+5. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população geométrica
+de parâmetro $\mu$. 
+
+a) Obtenha a função escore e a matriz de informação de Fisher para $\mu$.
+b) Mostre que a esperança da função escore é zero.
+c) Mostre que a variância da função escore corresponde a esperança da
+segunda derivada da log-verossimilhança de $\mu$.
+
+6. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população uniforme com
+parâmetros $a = 0$ e b. 
+
+a) Discuta como o estimador de máxima verossimilhança para b
+pode ser obtido neste caso.
+b) Obtenha a função e escore e verifique se as igualdades de Bartlett
+são válidas.
+
+7. Sejam $Y_1, \ldots, Y_n$ amostras iid com $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$.
+Considere os estimadores
+
+$$\bar{Y} = \sum_{i=1}^n Y_i, \quad \text{para} \quad \mu \quad \text{e} \quad
+\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \mu)^2, \quad \text{para} \quad \sigma^2.$$
+
+a) Mosque que ambos são não viciados.
+b) Obtenha a variância de $\bar{Y}$ e $\hat{\sigma}^2$.
+c) Mosque que ambos são consistentes.
+d) Considere o estimador 
+
+$$ \hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(Y_i - \bar{Y})^2,$$
+mostre que este estimador é viciado.
+d) Proponha uma correção para o estimador em c) de modo a torná-lo
+não viciado.
+
+8. Sejam $Y_1, Y_2, Y_3$ uma amostra iid de uma v.a. com $E(Y_i) = \mu$ e 
+$V(Y_i) = \sigma^2$ em que $\sigma^2$ é conhecido. Considere os
+estimadores
+$\hat{\mu}_1 = \frac{Y_1 + Y_2 + Y_3}{3}$ e $\hat{\mu}_2 = \frac{1}{2}Y_1 + \frac{1}{4}Y_2 + \frac{1}{4}Y_3$.
+
+a) Mostre que ambos são não viciados para $\mu$.
+b) Obtenha a variância de $\hat{\mu}_1$ e $\hat{\mu}_2$.
+c) Mosque que ambos são consistente para $\mu$.
+c) Qual estimador você prefere? Explique.
+
+9. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma v.a. com $E(Y_i) = \mu$ e $V(Y_i) = \sigma^2$ em que
+$\sigma^2$ é conhecido. Considere os estimadores lineares 
+$Y_L = \sum_{i=1}^n l_i Y_i$ em que $l_i \geq 0$, $i = 1, \ldots, n$ são
+constantes conhecidas.
+
+a) Sob quais condições $Y_L$ é não viciado?
+b) Sob quais condições $Y_L$ é eficiente?
+c) Sob quais condições $Y_L$ é consistente?
+
+10. Para cada um dos modelos abaixo, encontre o limite inferior de Cramér-Rao.
+
+a) Normal média $\mu$ e variância $\sigma^2$ com $\sigma^2$ conhecido.
+b) Normal média $\mu$ e variância $\sigma^2$ com $\mu$ conhecido.
+c) Poisson média $\mu$.
+d) Binomial $n$ conhecido e probabilidade de sucesso $\mu$.
+e) Geométrica com parâmetro $\mu$.
+f) Exponencial de média $\mu$.
 
 # Distribuiçao assintótica da função escore
 
@@ -73,3 +199,116 @@ Dica use um otimizador numérico como a optim() em R.
     d) Binomial.
     e) Normal inversa.
     f) Geométrica.
+
+# Vetor de parâmetros
+
+1. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Normal
+com esperança $\mu$ e variância desconhecida $\sigma^2$. 
+Encontre o estimador de máxima verossimilhaça para $\mu$ e $\sigma^2$.
+Obtenha a distribuição assintótica e um intervalo de confiança para ambos.
+
+2. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Gamma
+com esperança $\mu$ e dispersão desconhecida $\lambda$. Neste caso a fdp
+é dada por
+$$f(y;\mu,\lambda) = \frac{\lambda^{\lambda} e^{-\lambda}}{\Gamma(\lambda)} y^{-1} \exp\left \{  -\lambda\left ( \frac{y}{\mu} - \log \frac{y}{\mu} - 1 \right ) \right \}.$$
+Suponha que a seguinte amostra foi observada: $y_i = 35.81, 8.21, 0.02, 8.31, 14.43, 11.48,20.88,2.81,40.03$. Encontre o estimador e estimativa de máxima 
+verossimilhaça para $\mu$ e $\lambda$ baseado na amostra observada.
+Numericamente quando necessário. Obtenha a distribuição assintótica e 
+um intervalo de confiança para $\mu$ e $\lambda$.
+
+3. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população von Mises
+de parâmetros $\mu$ e $\lambda$. Neste caso a fdp
+é dada por
+$$f(y;\mu,\lambda) = \frac{1}{2\pi I_0(\lambda)} \exp \left \{ \lambda \cos(y- \mu) \right \}, \quad \text{para} \quad 0 \leq y \leq 2 \pi, \quad \text{e} \quad \mu \in [0, 2\pi), \lambda > 0.$$
+A função $I_0(\lambda)$ é a função Bessel modificada dada por
+$$I_0(\lambda) = \int_{0}^{2\pi} \exp(\lambda \cos y)dy.$$
+Suponha que a seguinte amostra foi observada: $y_i = 1.17,0.64,0.59,0.38,0.20,0.63,0.67,0.38,0.69,0.72.$. 
+Encontre o estimador e estimativa de máxima 
+verossimilhaça para $\mu$ e $\lambda$ baseado na amostra observada.
+Numericamente quando necessário. Obtenha a distribuição assintótica e 
+um intervalo de confiança para $\mu$ e $\lambda$.
+
+4. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Simplex
+de parâmetros $\mu$ e $\sigma^2$. Neste caso a fdp
+é dada por
+$$f(y;\mu,\sigma) = [2\pi\sigma^2 \{y(1-y) \}^3]^{-1/2} \exp \left \{ -\frac{1}{2\sigma^2} \frac{(y - \mu)^2}{y(1-y)\mu^2 (1- \mu)^2}  \right \},$$
+onde $0 < y, \mu < 1$ e $\sigma^2 > 0$.
+Suponha que a seguinte amostra foi observada: $y_i = 0.48,0.48,0.50,0.51,0.50,0.49,0.51,0.52,0.50,0.48.$. 
+Encontre o estimador e estimativa de máxima 
+verossimilhaça para $\mu$ e $\sigma^2$ baseado na amostra observada.
+Numericamente quando necessário. Obtenha a distribuição assintótica e 
+um intervalo de confiança para $\mu$ e $\sigma^2$.
+
+5. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Beta
+de parâmetros $\alpha$ e $\beta$. Neste caso a fdp
+é dada por
+$$f(y;\alpha,\beta) = \frac{1}{B(\alpha, \beta)} y^{\alpha - 1} (1-y)^{\beta - 1},$$
+onde $B$ é a função beta definida por
+$$ B(\alpha,\beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)}.$$
+Suponha que a seguinte amostra foi observada: $y_i = 0.48,0.48,0.50,0.51,0.50,0.49,0.51,0.52,0.50,0.48.$. 
+Encontre o estimador e estimativa de máxima 
+verossimilhaça para $\mu$ e $\sigma^2$ baseado na amostra observada.
+Numericamente quando necessário. Obtenha a distribuição assintótica e 
+um intervalo de confiança para $\alpha$ e $\beta.$
+
+6. Sejam $Y_1, \ldots, Y_n$ v.a iid de uma população Power exponencial
+de parâmetros $\mu$, $\sigma^2$ e $\rho$. Neste caso a fdp
+é dada por
+$$f(y;\mu,\sigma,\rho) = \frac{\rho(2\sigma^2)^{-1/\rho}}{2 \Gamma(1/\rho)} \exp \left \{  -\frac{1}{2\sigma^2} |y - \mu|^{\rho}  \right \},$$
+onde $y, \mu \in \Re$ e $\sigma, \rho > 0$. 
+Suponha que a seguinte amostra foi observada: $y_i = $. 
+Encontre o estimador e estimativa de máxima 
+verossimilhaça para $\mu$ e $\sigma^2$ baseado na amostra observada fixando
+o $\rho = 1$ e $\rho = 2$. Proponha uma estratégia para estimar o parâmetro $\rho$.
+Numericamente quando necessário. 
+Obtenha a distribuição assintótica e um intervalo de confiança para 
+$\mu$ e $\sigma$ para os casos anteriores.
+
+# Suficiência
+
+1. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $B(1,p)$. Verifique
+se a estatística $T = \sum_{i=1}^n Y_i$ é suficiente para $p$.
+
+2. Considere a mesma situação do Exercício 1, com $n = 3$ e $T = Y_1 + 2 Y_2 + Y_3$.
+Verifique se $T$ é suficiente para $p$.
+
+3. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população Poisson $P(\theta)$.
+Verifique se $T = \sum_{i=1}^n Y_i$ é suficiente para $\theta$.
+
+4. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $U(0, \theta)$. 
+Encontre uma estatística suficiente para $\theta$ usando o Critério da fatorização.
+
+5. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $G(\alpha, \beta)$.
+Encontre uma estatística conjuntamente suficiente para $\alpha$ e $\beta$.
+
+# Testes de hipóteses
+
+1. Sejam $Y_1, \ldots, Y_n$ uma amostra de uma v.a com função densidade 
+$$ f(y,\theta) = \theta^2 y e^{-\theta y}, \quad y,\theta > 0.$$
+Obtenha a estatística dos testes LRT, Wald e Score para testar
+$H_0: \theta = 1$ vs $H_1: \theta = 2$.
+
+2. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $N(\mu, 1)$.
+Obtenha a estatística dos testes LRT, Wlad e Score para testar
+$H_0: \mu = 4$ vs $H_1: \mu \neq 4$. Suponha que a seguinte amostra foi
+observada $y_i = 4.36,4.47,7.01,5.59,6.61,5.09,5.57,7.99,6.11,4.84$.
+Qual a sua conclusao aos níveis $10\%$, $5\%$ e $1\%$ de significância.
+
+3. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $Exp(\theta)$.
+Encontre o LRT, Wald e score testes para testar $H_0: \theta = 1$ vs $H_1: \theta \neq 1$.
+Se você observar $y_i = 0.8,1.3,1.8,0.9,1.0$ qual a sua decisão ao nível de $5\%$.
+
+4. Sejam $Y_1, \ldots, Y_n$ uma amostra iid de uma população $Y \sim N(\mu_Y, 9)$
+e $X_1, \ldots, X_m$ uma amostra iid de uma população $X \sim N(\mu_X, 25)$.
+Sendo as amostras independentes construa um teste para avaliar
+$H_0: \mu_Y = \mu_X$ vs $H_1: \mu_Y \neq \mu_X$.
+Sendo $n = 9$, $\sum y_i = 3.4$ e $m = 16$ e $\sum x_i = 4.3$. Qual a
+sua conclusão a um nível de significância de $5\%$?
+
+5. Sejam $X_1, \ldots, X_n$ uma amostra iid de uma população $X \sim P(\theta_1)$
+e $Y_1, \ldots, Y_m$ uma amostra iid de uma população $Y \sim N(\theta_2)$.
+Sendo as amostras independentes construa um teste para avaliar
+$H_0: \theta_1 = \theta_2$ vs $H_1: \theta_1 \neq \theta_2$.
+Sendo $n = 5$, $\sum x_i = 3.8$ e $m = 8$ e $\sum y_i = 4.8$. Qual a
+sua conclusão a um nível de significância de $5\%$?
+

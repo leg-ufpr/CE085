@@ -23,9 +23,7 @@ navbar:
       menu:
       - text: "Lista I - Revisão de probabilidade"
         href: ListaI.html
-      - text: "Lista II - Verossimilhança"
-        href: ListaII.html
-      - text: "Lista III - Teoria assintótica da verossimilhança"
+      - text: "Lista II - statística Inferencial"
         href: ListaIII.html
     - text: "Códigos"
       menu:
