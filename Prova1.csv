@@ -1,29 +1,29 @@
-Nome,Prova 1,Lista 1,Prova 1 e Lista 1,Prova 2,Média
-Andressa Luiza Cordeiro,4,6,4.4,4.37,4.4
-Bianca Salles Trentin,1.75,6,2.6,4.37,3.5
-Bruno de Oliveria Marcondes,4.25,9,5.2,4.62,4.9
-Bruno Godoi Graebin,4.55,9,5.44,4.67,5.1
-Elen Grochovski,7.8,9,8.04,7.87,8.0
-Felipe Cordeiro Melo,2.1,6,2.88,9.37,6.1
-Felipe de Moraes Kowalski,2.8,9,4.04,2.5,3.3
-Gian de Lima Santos,8,9,8.2,8.75,8.5
-Guilherme Fernando Hathi da Costa,2.2,6,2.96,NA,3.0
-Hugo de Siqueira Pereira,3.1,8,4.08,4.37,4.2
-Isabella Possa Gonçalves,2.75,9,4,8.75,6.4
-Isadora Chiamulera,4.25,9,5.2,10,7.6
-Jayme Gomes dos Santos Junior,1.3,9,2.84,9.5,6.2
-José Paulo Miketen Maltaca,7,9,7.4,6.87,7.1
-Luciana Helena Kowalski,1.4,6,2.32,6.87,4.6
-Lucka Kiohei Neves Markawa,5.5,9,6.2,8.75,7.5
-Marcelo Alexandre Peixoto,3.8,6,4.24,NA,4.2
-Nicole Sofia Herman Marques,6,8,6.4,7.5,7.0
-Nilton da Silva Reis Filho,4.8,9,5.64,8.75,7.2
-Nívea da Silva Zamaro,2,6,2.8,4.375,3.6
-Patricia Renata Diez,7.3,9,7.64,6.25,6.9
-Paulo Augusto Grosso de Souza,2.3,9,3.64,8.75,6.2
-Pedro Henrique Pavan Gonçalves,4,7,4.6,3.75,4.2
-Pedro Wu Hsuan Yi,3,9,4.2,5,4.6
-Rodrigo Moura Ferreira,3,9,4.2,3.75,4.0
-Wagner Cassiano Cavalari da Silva,6.8,9,7.24,9.37,8.3
-William Henrique de Paula Ramos,7.9,9,8.12,9.37,8.7
-William R. Barreni,3.5,6,4,NA,4.0
+Nome,Prova 1,Lista 1,P1+L1,Prova 2,Trabalho,Media,Situação
+Andressa Luiza Cordeiro,4,6,4.4,4.37,6,4.9,FINAL
+Bianca Salles Trentin,1.75,6,2.6,4.37,6,4.3,FINAL
+Bruno de Oliveria Marcondes,4.25,9,5.2,4.62,8.5,6.1,FINAL
+Bruno Godoi Graebin,4.55,9,5.44,4.67,7.5,5.9,FINAL
+Elen Grochovski,7.8,9,8.04,7.87,8,8.0,APROVADO
+Felipe Cordeiro Melo,2.1,6,2.88,9.37,8,6.8,FINAL
+Felipe de Moraes Kowalski,2.8,9,4.04,2.5,5,3.8,REPROVADO
+Gian de Lima Santos,8,9,8.2,8.75,8,8.3,APROVADO
+Guilherme Fernando Hathi da Costa,2.2,6,2.96,7.5,9,6.5,FINAL
+Hugo de Siqueira Pereira,3.1,8,4.08,7.25,8.5,6.6,FINAL
+Isabella Possa Gonçalves,2.75,9,4,8.75,9,7.3,APROVADO
+Isadora Chiamulera,4.25,9,5.2,10,9,8.1,APROVADO
+Jayme Gomes dos Santos Junior,1.3,9,2.94,9.5,8.5,7.0,APROVADO
+José Paulo Miketen Maltaca,7,9,7.4,6.87,9,7.8,APROVADO
+Luciana Helena Kowalski,1.4,6,2.32,6.87,8.5,5.9,FINAL
+Lucka Kiohei Neves Markawa,5.5,9,6.2,8.75,8,7.7,APROVADO
+Marcelo Alexandre Peixoto,3.8,6,4.24,0,0,1.4,REPROVADO
+Nicole Sofia Herman Marques,6,8,6.4,8.12,8,7.5,APROVADO
+Nilton da Silva Reis Filho,4.8,9,5.64,8.75,9,7.8,APROVADO
+Nívea da Silva Zamaro,2,6,2.8,4.375,7.5,4.9,FINAL
+Patricia Renata Diez,7.3,9,7.64,6.25,9,7.6,APROVADO
+Paulo Augusto Grosso de Souza,2.3,9,3.64,8.75,7.5,6.6,FINAL
+Pedro Henrique Pavan Gonçalves,4,7,4.6,3.75,8,5.5,FINAL
+Pedro Wu Hsuan Yi,3,9,4.2,5,8,5.7,FINAL
+Rodrigo Moura Ferreira,3,9,4.2,3.75,7.5,5.2,FINAL
+Wagner Cassiano Cavalari da Silva,6.8,9,7.24,9.37,9,8.5,APROVADO
+William Henrique de Paula Ramos,7.9,9,8.12,9.37,9,8.8,APROVADO
+William R. Barreni,3.5,6,4,0,8,4.0,FINAL
