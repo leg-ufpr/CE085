@@ -14,5 +14,5 @@ source("setup_knitr.R")
 
 ```{r pacotes, include=TRUE}
 prova1 <- read.csv("Prova1.csv", header = TRUE)
-kable(prova1, align = c("l","c","c","c","c","c","l"), digits = 2)
+kable(prova1, align = c("l","c","c","c","c","c","c","c","l"), digits = 2)
 ```
