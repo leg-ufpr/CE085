@@ -35,7 +35,7 @@
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
+<style type="text/css" data-origin="pandoc">
 div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -76,8 +76,28 @@ code > span.in { color: #008000; } /* Information */
 .code-folding-btn {
   margin-right: -30px;
 }
-
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -511,7 +531,7 @@ table.header {
 
 
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">prova1 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;Prova1.csv&quot;</span>, <span class="dt">header =</span> <span class="ot">TRUE</span>)
-<span class="kw">kable</span>(prova1, <span class="dt">align =</span> <span class="kw">c</span>(<span class="st">&quot;l&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;l&quot;</span>), <span class="dt">digits =</span> <span class="dv">2</span>)</code></pre></div>
+<span class="kw">kable</span>(prova1, <span class="dt">align =</span> <span class="kw">c</span>(<span class="st">&quot;l&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;l&quot;</span>), <span class="dt">digits =</span> <span class="dv">2</span>)</code></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -521,7 +541,9 @@ table.header {
 <th align="center">P1.L1</th>
 <th align="center">Prova.2</th>
 <th align="center">Trabalho</th>
-<th align="left">Media</th>
+<th align="center">Media</th>
+<th align="center">Exame</th>
+<th align="left">Nota.final</th>
 <th align="left">Situação</th>
 </tr>
 </thead>
@@ -533,8 +555,10 @@ table.header {
 <td align="center">4.40</td>
 <td align="center">4.37</td>
 <td align="center">6.0</td>
-<td align="left">4.9</td>
-<td align="left">FINAL</td>
+<td align="center">4.9</td>
+<td align="center">6.00</td>
+<td align="left">5.45</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Bianca Salles Trentin</td>
@@ -543,8 +567,10 @@ table.header {
 <td align="center">2.60</td>
 <td align="center">4.37</td>
 <td align="center">6.0</td>
-<td align="left">4.3</td>
-<td align="left">FINAL</td>
+<td align="center">4.3</td>
+<td align="center">2.60</td>
+<td align="left">3.45</td>
+<td align="left">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Bruno de Oliveria Marcondes</td>
@@ -553,8 +579,10 @@ table.header {
 <td align="center">5.20</td>
 <td align="center">4.62</td>
 <td align="center">8.5</td>
-<td align="left">6.1</td>
-<td align="left">FINAL</td>
+<td align="center">6.1</td>
+<td align="center">5.00</td>
+<td align="left">5.55</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Bruno Godoi Graebin</td>
@@ -563,8 +591,10 @@ table.header {
 <td align="center">5.44</td>
 <td align="center">4.67</td>
 <td align="center">7.5</td>
-<td align="left">5.9</td>
-<td align="left">FINAL</td>
+<td align="center">5.9</td>
+<td align="center">6.85</td>
+<td align="left">6.38</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Elen Grochovski</td>
@@ -573,8 +603,10 @@ table.header {
 <td align="center">8.04</td>
 <td align="center">7.87</td>
 <td align="center">8.0</td>
-<td align="left">8.0</td>
-<td align="left">APROVADO</td>
+<td align="center">8.0</td>
+<td align="center">NA</td>
+<td align="left">8.00</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Felipe Cordeiro Melo</td>
@@ -583,8 +615,10 @@ table.header {
 <td align="center">2.88</td>
 <td align="center">9.37</td>
 <td align="center">8.0</td>
-<td align="left">6.8</td>
-<td align="left">FINAL</td>
+<td align="center">6.8</td>
+<td align="center">6.50</td>
+<td align="left">6.65</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Felipe de Moraes Kowalski</td>
@@ -593,8 +627,10 @@ table.header {
 <td align="center">4.04</td>
 <td align="center">2.50</td>
 <td align="center">5.0</td>
-<td align="left">3.8</td>
-<td align="left">REPROVADO</td>
+<td align="center">3.8</td>
+<td align="center">NA</td>
+<td align="left">3.80</td>
+<td align="left">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Gian de Lima Santos</td>
@@ -603,8 +639,10 @@ table.header {
 <td align="center">8.20</td>
 <td align="center">8.75</td>
 <td align="center">8.0</td>
-<td align="left">8.3</td>
-<td align="left">APROVADO</td>
+<td align="center">8.3</td>
+<td align="center">NA</td>
+<td align="left">8.30</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Guilherme Fernando Hathi da Costa</td>
@@ -613,8 +651,10 @@ table.header {
 <td align="center">2.96</td>
 <td align="center">7.50</td>
 <td align="center">9.0</td>
-<td align="left">6.5</td>
-<td align="left">FINAL</td>
+<td align="center">6.5</td>
+<td align="center">7.00</td>
+<td align="left">6.75</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Hugo de Siqueira Pereira</td>
@@ -623,8 +663,10 @@ table.header {
 <td align="center">4.08</td>
 <td align="center">7.25</td>
 <td align="center">8.5</td>
-<td align="left">6.6</td>
-<td align="left">FINAL</td>
+<td align="center">6.6</td>
+<td align="center">8.00</td>
+<td align="left">7.30</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Isabella Possa Gonçalves</td>
@@ -633,8 +675,10 @@ table.header {
 <td align="center">4.00</td>
 <td align="center">8.75</td>
 <td align="center">9.0</td>
-<td align="left">7.3</td>
-<td align="left">APROVADO</td>
+<td align="center">7.3</td>
+<td align="center">NA</td>
+<td align="left">7.30</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Isadora Chiamulera</td>
@@ -643,8 +687,10 @@ table.header {
 <td align="center">5.20</td>
 <td align="center">10.00</td>
 <td align="center">9.0</td>
-<td align="left">8.1</td>
-<td align="left">APROVADO</td>
+<td align="center">8.1</td>
+<td align="center">NA</td>
+<td align="left">8.10</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Jayme Gomes dos Santos Junior</td>
@@ -653,8 +699,10 @@ table.header {
 <td align="center">2.94</td>
 <td align="center">9.50</td>
 <td align="center">8.5</td>
-<td align="left">7.0</td>
-<td align="left">APROVADO</td>
+<td align="center">7.0</td>
+<td align="center">NA</td>
+<td align="left">7.00</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">José Paulo Miketen Maltaca</td>
@@ -663,8 +711,10 @@ table.header {
 <td align="center">7.40</td>
 <td align="center">6.87</td>
 <td align="center">9.0</td>
-<td align="left">7.8</td>
-<td align="left">APROVADO</td>
+<td align="center">7.8</td>
+<td align="center">NA</td>
+<td align="left">7.80</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Luciana Helena Kowalski</td>
@@ -673,8 +723,10 @@ table.header {
 <td align="center">2.32</td>
 <td align="center">6.87</td>
 <td align="center">8.5</td>
-<td align="left">5.9</td>
-<td align="left">FINAL</td>
+<td align="center">5.9</td>
+<td align="center">7.80</td>
+<td align="left">6.85</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Lucka Kiohei Neves Markawa</td>
@@ -683,8 +735,10 @@ table.header {
 <td align="center">6.20</td>
 <td align="center">8.75</td>
 <td align="center">8.0</td>
-<td align="left">7.7</td>
-<td align="left">APROVADO</td>
+<td align="center">7.7</td>
+<td align="center">NA</td>
+<td align="left">7.70</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Marcelo Alexandre Peixoto</td>
@@ -693,8 +747,10 @@ table.header {
 <td align="center">4.24</td>
 <td align="center">0.00</td>
 <td align="center">0.0</td>
-<td align="left">1.4</td>
-<td align="left">REPROVADO</td>
+<td align="center">1.4</td>
+<td align="center">NA</td>
+<td align="left">1.40</td>
+<td align="left">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Nicole Sofia Herman Marques</td>
@@ -703,8 +759,10 @@ table.header {
 <td align="center">6.40</td>
 <td align="center">8.12</td>
 <td align="center">8.0</td>
-<td align="left">7.5</td>
-<td align="left">APROVADO</td>
+<td align="center">7.5</td>
+<td align="center">NA</td>
+<td align="left">7.50</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Nilton da Silva Reis Filho</td>
@@ -713,8 +771,10 @@ table.header {
 <td align="center">5.64</td>
 <td align="center">8.75</td>
 <td align="center">9.0</td>
-<td align="left">7.8</td>
-<td align="left">APROVADO</td>
+<td align="center">7.8</td>
+<td align="center">NA</td>
+<td align="left">7.80</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Nívea da Silva Zamaro</td>
@@ -723,8 +783,10 @@ table.header {
 <td align="center">2.80</td>
 <td align="center">4.38</td>
 <td align="center">7.5</td>
-<td align="left">4.9</td>
-<td align="left">FINAL</td>
+<td align="center">4.9</td>
+<td align="center">5.20</td>
+<td align="left">5.05</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Patricia Renata Diez</td>
@@ -733,8 +795,10 @@ table.header {
 <td align="center">7.64</td>
 <td align="center">6.25</td>
 <td align="center">9.0</td>
-<td align="left">7.6</td>
-<td align="left">APROVADO</td>
+<td align="center">7.6</td>
+<td align="center">NA</td>
+<td align="left">7.60</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Paulo Augusto Grosso de Souza</td>
@@ -743,8 +807,10 @@ table.header {
 <td align="center">3.64</td>
 <td align="center">8.75</td>
 <td align="center">7.5</td>
-<td align="left">6.6</td>
-<td align="left">FINAL</td>
+<td align="center">6.6</td>
+<td align="center">6.50</td>
+<td align="left">6.55</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Pedro Henrique Pavan Gonçalves</td>
@@ -753,8 +819,10 @@ table.header {
 <td align="center">4.60</td>
 <td align="center">3.75</td>
 <td align="center">8.0</td>
-<td align="left">5.5</td>
-<td align="left">FINAL</td>
+<td align="center">5.5</td>
+<td align="center">5.50</td>
+<td align="left">5.50</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Pedro Wu Hsuan Yi</td>
@@ -763,8 +831,10 @@ table.header {
 <td align="center">4.20</td>
 <td align="center">5.00</td>
 <td align="center">8.0</td>
-<td align="left">5.7</td>
-<td align="left">FINAL</td>
+<td align="center">5.7</td>
+<td align="center">4.50</td>
+<td align="left">5.10</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">Rodrigo Moura Ferreira</td>
@@ -773,8 +843,10 @@ table.header {
 <td align="center">4.20</td>
 <td align="center">3.75</td>
 <td align="center">7.5</td>
-<td align="left">5.2</td>
-<td align="left">FINAL</td>
+<td align="center">5.2</td>
+<td align="center">4.80</td>
+<td align="left">5.00</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">Wagner Cassiano Cavalari da Silva</td>
@@ -783,8 +855,10 @@ table.header {
 <td align="center">7.24</td>
 <td align="center">9.37</td>
 <td align="center">9.0</td>
-<td align="left">8.5</td>
-<td align="left">APROVADO</td>
+<td align="center">8.5</td>
+<td align="center">NA</td>
+<td align="left">8.50</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">William Henrique de Paula Ramos</td>
@@ -793,8 +867,10 @@ table.header {
 <td align="center">8.12</td>
 <td align="center">9.37</td>
 <td align="center">9.0</td>
-<td align="left">8.8</td>
-<td align="left">APROVADO</td>
+<td align="center">8.8</td>
+<td align="center">NA</td>
+<td align="left">8.80</td>
+<td align="left">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">William R. Barreni</td>
@@ -803,8 +879,10 @@ table.header {
 <td align="center">4.00</td>
 <td align="center">0.00</td>
 <td align="center">8.0</td>
-<td align="left">4.0</td>
-<td align="left">FINAL</td>
+<td align="center">4.0</td>
+<td align="center">2.00</td>
+<td align="left">3.00</td>
+<td align="left">Reprovado</td>
 </tr>
 </tbody>
 </table>
